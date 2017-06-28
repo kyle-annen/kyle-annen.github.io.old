@@ -7,6 +7,7 @@ categories: ruby rails node js es6 8th-Light
 ---
 
 ![The Long Path to the Mountains]({{ site.url }}/assets/glacier_pano.jpg)
+*Glacier National Park - 2016* 
 
 # End of a Long Road, Base of the Mountain
 After years of self directed learning, and some aimless wandering, I am pleased to start the next steps of my programming journey with [8th Light][8thlight] as a Resident Apprentice.  It took roughly 4,000 hours of independent programming, and hopefully some can benefit from my experience. 
@@ -22,7 +23,7 @@ While there is no one path, I will share my thoughts on how I would have proceed
 
 The resources available to new programmers is truly endless, as there is no possible way to read and complete them all before more are generated. It was such an information overload that it took me about a year to even have a semblance of a path.  
 
-Today I can say with confidence that Javascript is an excellent and efficient place to start. Every interactive webpages needs, at a minimum, Javascript, HTML and CSS. 
+Today I can say with confidence that Javascript is an excellent and efficient place to start. Every interactive webpage needs, at a minimum, Javascript, HTML and CSS. 
 
 In the current climate I would highly suggest starting with Javascript. 
 
