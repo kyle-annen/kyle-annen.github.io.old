@@ -11,7 +11,7 @@ categories: ruby rails node js es6 8th-Light
 # End of a Long Road, Base of the Mountain
 After years of self directed learning, and some aimless wandering, I am pleased to start the next steps of my programming journey with [8th Light][8thlight] as a Resident Apprentice.  It took roughly 4,000 hours of independent programming, and hopefully some can benefit from my experience. 
 
-After so much meandering I can clearly see the path forward, and it is a mountain I'll climb for the rest of my life.
+After so much meandering I am pleased to have mentors to guide me on my journey, and it is a mountain I'll climb for the rest of my life.
 
 While there is no one path, I will share my thoughts on how I would have proceeded knowing what I know now.
 
