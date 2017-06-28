@@ -6,7 +6,7 @@ categories: ruby rails node js es6 8th-Light
 
 ---
 
-![The Long Path to the Mountains]({{ site.url }}/assets/mountain.jpg)
+![The Long Path to the Mountains]({{ site.url }}/assets/glacier_pano.jpg)
 
 # End of a Long Road, Base of the Mountain
 After years of self directed learning, and some aimless wandering, I am pleased to start the next steps of my programming journey with [8th Light][8thlight] as a Resident Apprentice.  It took roughly 4,000 hours of independent programming, and hopefully some can benefit from my experience. 
@@ -15,8 +15,12 @@ After so much meandering I can clearly see the path forward, and it is a mountai
 
 While there is no one path, I will share my thoughts on how I would have proceeded knowing what I know now.
 
+![JavaScript]({{ site.url }}/assets/nodejsbanner.png)
+
 # Start with Javascript 
-*Dev-bootcamps, online-bootcamps, programming courses, open courseware, interactive online programming platforms, books from the bookstore, coding clubs, and Meetups.* The resources available for the new programmer are truly endless, as there is no possible way to read and complete them all before more are generated. It was such an information overload that it took me about a year to even have a semblance of a path.  
+*Dev-bootcamps, online-bootcamps, programming courses, open courseware, interactive online programming platforms, books from the bookstore, coding clubs, and Meetups.* 
+
+The resources available to new programmers is truly endless, as there is no possible way to read and complete them all before more are generated. It was such an information overload that it took me about a year to even have a semblance of a path.  
 
 Today I can say with confidence that Javascript is an excellent and efficient place to start. Every interactive webpages needs, at a minimum, Javascript, HTML and CSS. 
 
@@ -32,6 +36,9 @@ Since V8 is open source, it has lead to the rise of the server-side Javascript r
 With Javascript popularity booming, starting your journey with JS is a no-brainer.
 
 # Use a Guided Progression (FreeCodeCamp) 
+
+![Free Code Camp]({{ site.url }}/assets/freeCodeCampBanner.png)
+
 [FreeCodeCamp][freecodecamp] is an online free interactive web platform with a thriving community. FreeCodeCamp was built specifically to address the circuitous way the founder learned to code.
 
 The estimated time for completion is roughly 2000 hours.  
