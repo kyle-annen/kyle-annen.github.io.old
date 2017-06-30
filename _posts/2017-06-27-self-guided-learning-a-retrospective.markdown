@@ -21,13 +21,13 @@ While there is no one path, I will share my thoughts on how I would have proceed
 # Start with Javascript 
 *Dev-bootcamps, online-bootcamps, programming courses, open courseware, interactive online programming platforms, books from the bookstore, coding clubs, and Meetups.* 
 
-The resources available to new programmers is truly endless, as there is no possible way to read and complete them all before more are generated. It was such an information overload that it took me about a year to even have a semblance of a path.  
+The resources available to new programmers are truly endless, as there is no possible way to read and complete them all before more are generated. It was such an information overload that it took me about a year to even have a semblance of a path.  
 
 Today I can say with confidence that Javascript is an excellent and efficient place to start. Every interactive webpage needs, at a minimum, Javascript, HTML and CSS. 
 
 In the current climate I would highly suggest starting with Javascript. 
 
-Javascript is the de-facto choice for front-end scripting. There are other languages that can be used, though all currently are compiled to Javascript prior to execution(Elm, TypeScript, CoffeeScript).
+Javascript is the de-facto choice for front-end scripting. There are other languages that can be used, though all currently are compiled to Javascript prior to execution (Elm, TypeScript, CoffeeScript).
 
 
 Javascript is now more popular than ever. In 2008 Chrome web browser shipped with a new Javascript engine, Chrome V8. It massively increased the efficiency of Javascript in the browser.  
