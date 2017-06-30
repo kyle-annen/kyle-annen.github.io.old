@@ -27,7 +27,7 @@ Today I can say with confidence that Javascript is an excellent and efficient pl
 
 In the current climate I would highly suggest starting with Javascript. 
 
-Javascript is the de-facto choice for front-end scripting. There are other languages that can be used, though all currently are compiled to Javascript prior to execution (Elm, TypeScript, CoffeeScript).
+Javascript is the de-facto choice for front-end scripting. There are other languages that can be used, though all currently compile to Javascript prior to execution (Elm, TypeScript, CoffeeScript).
 
 
 Javascript is now more popular than ever. In 2008 Chrome web browser shipped with a new Javascript engine, Chrome V8. It massively increased the efficiency of Javascript in the browser.  
