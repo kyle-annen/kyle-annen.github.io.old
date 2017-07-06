@@ -5,14 +5,16 @@ date:   2017-07-06 12:00:00 -0500
 categories: ruby rails node js es6 8th-Light
 
 ---
+![Idaho Clouds]({{ site.url }}/assets/merc_clouds.jpg)
 
-![Scala]({{ site.url }}/assets/scala-icon.png)
 # Beginning Testing in Scala
 Testing in Scala can be very straight forward given that the code is structured correctly. Given code that is written in a functional way, and avoiding a few pit-falls, you can accomplish the majority of test coverage with Unit Testing.
 
 The options for test suites in Scala are [Scala Test][scalatest] and [Scala Spec][scalaspec].  Today I will be focusing on ```ScalaTest```, with ```sbt``` as the build tool.
 
 First, let's make sure the testing environment is ready to go. 
+
+![Scala]({{ site.url }}/assets/scala-icon.png)
 
 # Configuration for ScalaTest
 
@@ -158,7 +160,7 @@ With the allow for varied returns, we can rerun the test, and see that it passes
 
 # Blues Skies Ahead
 
-![Idaho Clouds]({{ site.url }}/assets/merc_clouds.jpg)
+
 
 Testing gives us confidence, and by structuring Scala code with static types and comprehensive tests give us the peace of mind to know that everything is working as it should.  Limiting dependencies forces us to write managable and maintainable code.  Embrace testing and the blue skies it will bring to your future.
 
