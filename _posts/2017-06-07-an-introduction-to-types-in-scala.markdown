@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A Introduction to Types in Scala"
+title:  "An Introduction to Types in Scala"
 date:   2017-07-07 12:00:00 -0500
 categories: scala types static-typing 
 
@@ -8,7 +8,7 @@ categories: scala types static-typing
 
 # Static Typing in Scala - Rock Solid
 
-![Glacier National Park]({{ site.url }}/assets/static-type-mountains.jpg)
+![Glacier National Park]({{ site.url }}/assets/static-type-mountain.jpg)
 
 Before I had used static typing languages that where static typed look cumbersome, verbose, inflexible and overall very unappealing. The flexibility of Javascript es6 made everything seem possible.  It made me feel like I could do anything, build anything, that everything I wrote was good enough.  It worked, didn't it? Why would it not be right...
 
