@@ -10,24 +10,26 @@ categories: scala types static-typing
 
 ![Glacier National Park]({{ site.url }}/assets/static-type-mountain.jpg)
 
-Before I had used static typing languages that where static typed look cumbersome, verbose, inflexible and overall very unappealing. The flexibility of Javascript es6 made everything seem possible.  It made me feel like I could do anything, build anything, that everything I wrote was good enough.  It worked, didn't it? Why would it not be right...
+Before I had used any statically typed languages, static types looked cumbersome, verbose, inflexible and overall very unappealing. The flexibility of Javascript made everything seem possible.  It made me feel like I could do anything, build anything, that everything I wrote was good enough.  It worked, didn't it? Why would it not be right...
 
-After having spent a few weeks with Scala, using static types throughout my project, I have come to realize that static typing actually give me more power.  I have to sit and think about each line of code, about the purpose of every method.  It has made me introspective about the significance of the code I produce, made me examine why I choose one path over another.  It has truly made me better.
+After a few weeks with Scala and using static types throughout my project, I have come to realize that static typing is actually a benefit.  It requires you to sit and think about each line of code, about the purpose of every method.  It makes you more introspective about the significance of the code, makes you examine choosing one path over another.
 
 # Why Types
 
-Static types allow the compiler to throw an error, instead of waiting until runtime to throw an error.  
+Static types allow the compiler to throw an error at compile time, instead of waiting until runtime.  
 
-Why do we care? Catching errors at compile time 
+Why do we care? That precisely the subject of this post.
 
 # This is Not The Greatest Guide, it is Only a Tribute
 
 ![Tribute]({{ site.url }}/assets/tribute.jpg)
 
-This post is purely meant as a general overview of types, and mostly a long winded exploration of my thoughts.  If you are looking for a more in depth look at Type Hierarchy and Abstract Types, an excellent article by ***Konrad "ktoso" Malawski*** can be found here: [Scala’s Types of Types][scalatypeoftypes].
+This post is purely intended as a general primer to types in Scala, and mostly a long winded exploration of my train of thought during my own exploration.  If you are looking for a more in depth look into Type Hierarchy and Abstract Types, an excellent article by ***Konrad "ktoso" Malawski*** can be found here: [Scala’s Types of Types][scalatypeoftypes].
+
+It is incredibly detailed an excellent resource.
 
 # Type Ascription
-Type Ascription is how we explicitly define a type in Scala.  If you do not use Type Ascription the compiler will attempt to guess, or infer, the Type. 
+***Type Ascription*** is how we explicitly define a type in Scala.  If you do not use Type Ascription the compiler will attempt to guess, or infer, the Type. This is called ***Type Inference***.
 
 For the following exercises I will be using the Scala REPL, if you have Scala installed you can simply open a terminal and type: 
 
@@ -35,14 +37,14 @@ For the following exercises I will be using the Scala REPL, if you have Scala in
 $ scala
 ```
 
-If we assign an integer to the variable num in scala REPL, we can see the outcome is Type Ascription of type ***Int*** to the variable ***num*** of value ***1***.
+If we assign an integer to the variable ***num*** in scala REPL, we can see the outcome of Type Inference is a type ***Int*** inferred to the variable ***num*** and assigned a value of ***1***.
 
 ``` scala
 scala> val num = 1
 //> num: Int = 1
 ```
 
-Alternatively, we can use Type Ascription to explicitly set the type. The syntax is for a ***colon*** directly following the variable, a ***space***, then the ***type***.
+Alternatively, we can use Type Ascription to explicitly set the type. The syntax for Type Ascpription of a val assignment is a ***colon*** directly following the variable, a ***space***, then the ***type***.
 
 In the example below, we will use the type ***String***.
 
@@ -51,7 +53,7 @@ scala> val text: String = "Scalabrasaurus"
 //> text: String = Scalabrasaurus
 ```
 
-# Wait, why are they useful?
+# Why Types Are Useful
 
 Let's try the same variable, type ascription and this time use an incorrect assignment. Let's use an integer.
 
