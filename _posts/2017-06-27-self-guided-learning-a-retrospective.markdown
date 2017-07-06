@@ -30,7 +30,7 @@ In the current climate I would highly suggest starting with Javascript.
 Javascript is the de-facto choice for front-end scripting. There are other languages that can be used, though all currently compile to Javascript prior to execution (Elm, TypeScript, CoffeeScript).
 
 
-Javascript is now more popular than ever. In 2008 Chrome web browser shipped with a new Javascript engine, Chrome V8. It massively increased the efficiency of Javascript in the browser.  
+Javascript is more popular than ever. In 2008 Chrome web browser shipped with a new Javascript engine, Chrome V8. It massively increased the efficiency of Javascript in the browser.  
 
 Since V8 is open source, it has lead to the rise of the server-side Javascript run-time NodeJS. 
 
@@ -40,7 +40,7 @@ With Javascript popularity booming, starting your journey with JS is a no-braine
 
 ![Free Code Camp]({{ site.url }}/assets/freeCodeCampBanner.png)
 
-[FreeCodeCamp][freecodecamp] is an online free interactive web platform with a thriving community. FreeCodeCamp was built specifically to address the circuitous way the founder learned to code.
+[FreeCodeCamp][freecodecamp] is an online free interactive web platform with a thriving community. FreeCodeCamp was built specifically to address the circuitous way in which the founder learned to code.
 
 The estimated time for completion is roughly 2000 hours.  
 
