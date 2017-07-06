@@ -15,7 +15,7 @@ Testing was a failsafe, a way to confirm what you already knew, that the code yo
 
 Testing is that, yet it is so much more. It let's you walk outside everyday to a blue and beautify sky, where you can plant new flowers and go for a nice walk.
 
-Test Driven Development lets me define how my methods, classes, and objects should be, even without knowing how to write them yet. Testing should be like walking outside to plant flowers, because we have already check the weather report, know what time of year it is, and know that the flowers need the 50% sunlight next to the shed in order to thrive.  
+Test Driven Development lets me define how my methods, classes, and objects should be, even without knowing how to write them yet. Testing should be like walking outside to plant flowers, because we have already checked the weather report, know what time of year it is, and know that the flowers need the 50% sunlight next to the shed in order to thrive.  
 
 Programming without defining the function of a particular piece of code is like walking out into a snow storm with a fern, digging in the rock hard soil, and expecting it to grow.  Yes, we can build a shelter around the fern and set up a space heater, but it is way more work. 
 
@@ -162,7 +162,7 @@ Don't dispair, failure let's us know our tests or static types are doing their j
 def renderString(s: String, output: String => Any) = output(s)
 //=> renderString: (s: String, output: String => Any)Any
 
-renderString("Scalatacular!", println())
+renderString("Scalatacular!", println)
 //=> Scalatacular!
 //=> res3: Any = ()
 
@@ -172,13 +172,13 @@ val result = renderString("Scalatacular!", mockPrintln)
 
 ```
 
-With the allow for varied returns, we can rerun the test, and see that it passes.  With the removal of the concrete dependency on ```Console.println()``` the ```renderString()``` method becomes much easier to test.  
+With the allowance for varied return types, we can rerun the test and see that it passes. Removing the concrete dependency of ```Console.println()```, the ```renderString()``` method becomes much easier to test.  
 
 # Blues Skies Ahead
 
 
 
-Testing gives us confidence, and by structuring Scala code with static types and comprehensive tests give us the peace of mind to know that everything is working as it should.  Limiting dependencies forces us to write managable and maintainable code.  Embrace testing and the blue skies it will bring to your future.
+Testing gives us confidence, and structuring Scala code with static types and comprehensive tests gives us the peace of mind to know that everything is working as it should. It also guides us to writing simple and elegant code. Embrace testing and the blue skies it will bring to your future.
 
 
 
