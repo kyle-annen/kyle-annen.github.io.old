@@ -2,10 +2,24 @@
 layout: post
 title:  "Beginning Testing in Scala"
 date:   2017-07-06 12:00:00 -0500
-categories: ruby rails node js es6 8th-Light
+categories: scala scalatest TDD
 
 ---
+# Philosophy of Testing - Embrace the Blue Sky
+
 ![Idaho Clouds]({{ site.url }}/assets/merc_clouds.jpg)
+
+When first learning how to write code I came across many negative viewpoints around testing.  Test Driven Development was the practice of writing tests that make sure your code works. At least, that is what I thought it meant.
+
+Testing was a failsafe, a way to confirm what you already knew, that the code you write functions as intended.
+
+Testing is that, yet it is so much more. It let's you walk outside everyday to a blue and beautify sky, where you can plant new flowers and go for a nice walk.
+
+Test Driven Development lets me define how my methods, classes, and objects should be, even without knowing how to write them yet. Testing should be like walking outside to plant flowers, because we have already check the weather report, know what time of year it is, and know that the flowers need the 50% sunlight next to the shed in order to thrive.  
+
+Programming without defining the function of a particular piece of code is like walking out into a snow storm with a fern, digging in the rock hard soil, and expecting it to grow.  Yes, we can build a shelter around the fern and set up a space heater, but it is way more work. 
+
+Embrace the blue sky, define your path before you begin.
 
 # Beginning Testing in Scala
 Testing in Scala can be very straight forward given that the code is structured correctly. Given code that is written in a functional way, and avoiding a few pit-falls, you can accomplish the majority of test coverage with Unit Testing.
@@ -14,7 +28,7 @@ The options for test suites in Scala are [Scala Test][scalatest] and [Scala Spec
 
 First, let's make sure the testing environment is ready to go. 
 
-![Scala]({{ site.url }}/assets/scala-icon.png)
+
 
 # Configuration for ScalaTest
 
