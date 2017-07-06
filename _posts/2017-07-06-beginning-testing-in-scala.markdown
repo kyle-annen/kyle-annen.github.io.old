@@ -22,7 +22,9 @@ Programming without defining the function of a particular piece of code is like 
 Embrace the blue sky, define your path before you begin.
 
 # Beginning Testing in Scala
-Testing in Scala can be very straight forward given that the code is structured correctly. Given code that is written in a functional way, and avoiding a few pit-falls, you can accomplish the majority of test coverage with Unit Testing.
+Testing in Scala can be very straight forward if the code is structured correctly. If the code is poorly structured it can be like planting a fern in a blizzard: tough, painstaking, and ultimately not bery productive. 
+
+Code that is written in a functional way which avoids a few pit-falls can accomplish the majority of test coverage using Unit Testing.
 
 The options for test suites in Scala are [Scala Test][scalatest] and [Scala Spec][scalaspec].  Today I will be focusing on ```ScalaTest```, with ```sbt``` as the build tool.
 
