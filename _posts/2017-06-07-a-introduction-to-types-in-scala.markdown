@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A Guide to Types in Scala"
+title:  "A Introduction to Types in Scala"
 date:   2017-07-07 12:00:00 -0500
 categories: scala types static-typing 
 
