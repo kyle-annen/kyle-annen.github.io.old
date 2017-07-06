@@ -20,7 +20,7 @@ Static types allow the compiler to throw an error, instead of waiting until runt
 
 Why do we care? Catching errors at compile time 
 
-# This Is Not The Greatest Guide, It Is Only a Tribute
+# This is Not The Greatest Guide, it is Only a Tribute
 
 ![Tribute]({{ site.url }}/assets/tribute.jpg)
 
