@@ -109,13 +109,16 @@ Now, passing ```mockPrintln()``` to ```renderString()``` as an argument will alt
 
 ## Writing the Modified Test
 
-We can write our test based on our expected outcome: we pass the method a ```String``` and expect the same ```String`` to be returned. 
+We can write our test based on our expected outcome: we pass the method a ```String``` and expect the same ```String``` to be returned. We will add our mocked method definition to the top of the class, to be used in further tests.
 
 ``` scala 
 //import the testing library
 import org.scalatest.FunSpec
 
 class RenderSpec extends FunSpec {
+
+  def mockPrintln(s: String): String = s
+
   describe("renderString") {
     it("displays the string passed") {
       val testString = "Scalalicious"
