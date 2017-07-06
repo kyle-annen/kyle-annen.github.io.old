@@ -31,43 +31,65 @@ If you prefer other styles of testing, all the offerings can be perused at [Scal
 - FlatSpec - teams moving from xUnit to BDD
 - FunSpec - similar to rSpec or Mocha
 - WordSpec - similar to specs or specs2
-- FreeSpec - unopinionated, best for teams with BDD experience
+- FreeSpec - un-opinionated, best for teams with BDD experience
 
 # Testable Code Structure
 In order for code to be easily tested, two things should be avoided at all cost.  
 
-1. Concrete dependencies
-2. Side effects
+1. Concrete dependencies -(covered here)
+2. Side effects - (will cover in successive articles)
 
 ## Concrete Dependencies
 A concrete dependencies is when a method explicitly calls an object, method, or value that has not been passed as an argument. The example below, ```printString()```, prints a string to the console.  This is a concrete dependency, we cannot change where the string is rendered as it has a concrete dependency on the native Scala function ```Console.println()```. 
 
 ``` scala
 def printString(s: String): Unit = println(s)
+//=> printString: (s: String)Unit
 
-renderString("Scala Rules!") // => Scala Rules!
+renderString("Scala Rules!") 
+//=> Scala Rules!
 ```
 
-In order to test ```printString()```, we would have to mock the method using a mocking library like ```mockito```.  Since we always want to avoid extraneous libraries and because our code is tested more easily without the concrete dependencies, we will restructure to code so that it is easier to test and more versatile. 
+Great! We can now print to the console.
+
+In order to test ```printString()```, we would have to mock the method using a mocking library like *mockito*.  Since we always want to avoid extraneous libraries and because our code is tested more easily without the concrete dependencies, we will restructure to code so that it is easier to test and more versatile. 
+
+### Testing Without a Mock
+
+If we where to write our test without a mock, what would be the Unit test?  We could try to write a test for the expected outcome of the string, but since our return type is ```Unit```, there is no return. 
+
+Let's write a test as if there was a return. 
+
+``` scala
+import org.scalatest.FunSpec
+
+class RenderSpec extends FunSpec {
+  describe("printString") {
+    it("prints a string to the console") {
+      val testString = "Scalatastic"
+      val expected = "Scalatastic"
+      val actual = printString(testString)
+
+      assert(actual == expected)
+    }
+  }
+}
+```
+
+### Failing Test
+
+The test fails, as ```printString()``` does not actually return anything.  How can we test a method that does not return anything? This is the issue with a hard dependency, it is difficult to test as the only outcome is a side-effect of printing.  However, if we refactor our code with a method which takes a callback as an argument, we can change the behavior in our test case.
 
 Here is the refactored ```renderString()``` which has an additional argument for passing a rendering method. When calling the below refactored code, we will pass ```Console.println()``` as the second argument, maintaining the functionality of the original code, while allowing for simple testing with a mock output (no mocking library needed), and removing the hard dependency on ```Console.println()```.
 
 ``` scala
 def renderString(s: String, output: String => Unit): Unit = output(s)
+//=> res1: Any = ()
 
-renderString("Scala Rules!", Console.println()) // => Scala Rules!
+renderString("Scala Rules!", Console.println()) 
+//=> Scala Rules!
+//=> res2: Any = ()
 ```
-
-
-
-## Side Effects
-A side effect is when a method changes a variable outside of its scope.  As Scala can be written in an Object Oriented pattern as well as Functionally, it is possible to have side effects.  This is best avoided by writing your code using the Single Responsibility Principle. 
-
-```
-Single Responsibility Principle - Each method should only have a single responsibility. A method should never be called for different purposes.
-```
-
-Each method should have set Inputs and Outputs, yet change nothing outside of its scope.
 
 # Testing RenderString()
 
@@ -80,25 +102,27 @@ The goal is a Unit test, so our mocked printing method will return the string in
 
 ``` scala 
 def mockPrintln(s: String): String = s
+//=> mockPrintln: (s: String)String
 ```
 
 Now, passing ```mockPrintln()``` to ```renderString()``` as an argument will alter the behavior to return the value instead of printing to the console.  
 
-## Writing the Test
-Finally 
+## Writing the Modified Test
+
+We can write our test based on our expected outcome: we pass the method a ```String``` and expect the same ```String`` to be returned. 
 
 ``` scala 
 //import the testing library
 import org.scalatest.FunSpec
 
-//
 class RenderSpec extends FunSpec {
   describe("renderString") {
     it("displays the string passed") {
-      val expected = "test"
+      val testString = "Scalalicious"
+      val expected = "Scalalicious"
       //call the mocked method to return the string
       //instead of printing to the console
-      val actual = renderString("test", mockPrintln)
+      val actual = renderString(testString, mockPrintln)
       assert(actual == expected)
     }
   }
@@ -111,10 +135,20 @@ class RenderSpec extends FunSpec {
 
 ![Sad Dog]({{ site.url }}/assets/saddog.jpg)
 
-Don't dispair, failure let's us know our tests or static types are doing their job. Due to the strict typing of the methods, we will have to slightly adjust the ```renderString()``` code in order to allow for a string to be returned.  We will change the return type from ```Unit``` (meaning there is not return type) to ```Any``` in order to accept a string return, or no return.
+Don't dispair, failure let's us know our tests or static types are doing their job. Due to the strict typing of the methods, we will have to slightly adjust the ```renderString()``` code in order to allow for a string to be returned.  We will eliminate the return type, as it will vary. We also need to change the ```output: String => Unit```  to ```output: String => Any``` to indicate that the passed function can have different outcomes.
 
 ``` scala 
-def renderString(s: String, output: String => Unit): Any = output(s)
+def renderString(s: String, output: String => Any) = output(s)
+//=> renderString: (s: String, output: String => Any)Any
+
+renderString("Scalatacular!", println())
+//=> Scalatacular!
+//=> res3: Any = ()
+
+val result = renderString("Scalatacular!", mockPrintln)
+//=> result: Any = Scalatastic!
+
+
 ```
 
 With the allow for varied returns, we can rerun the test, and see that it passes.  With the removal of the concrete dependency on ```Console.println()``` the ```renderString()``` method becomes much easier to test.  
