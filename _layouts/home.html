@@ -23,7 +23,7 @@ layout: default
   </div>
 
   <div class="tag-grid">
-    <h3>Blog Subjects</h3>
+    <h3>tags</h3>
     {% for category in site.categories %}
       <li class="tag-cloud-item" style="font-size: {{ category | last | size  | times: 500 | divided_by: site.categories.size | plus: 35 }}%">
         <!--
