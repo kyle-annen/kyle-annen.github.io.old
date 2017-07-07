@@ -14,13 +14,7 @@ My free time is spent loving the outdoors, biking in the city, and sampling all 
 You can find out more about 8th Light here:
 [8th Light][8th-light]
 
-# Open Source Work
-### Romato
-Romato is an open source API wrapper [Zomato][zomato] API. 
-* [Romato Repository][romato]
-* [Zomato API Documentation][zomatoAPIDocumentation]
+
 
 [8th-light]: https://www.8thlight.com
-[romato]: https://github.com/kyle-annen/romato
-[zomato]: https://www.zomato.com
-[zomatoAPIDocumentation]: https://developers.zomato.com/api
+
