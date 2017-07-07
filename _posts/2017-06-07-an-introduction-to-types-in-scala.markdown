@@ -181,25 +181,4 @@ I will leave you with a Chinese proverb which is probably overused, or based on 
 
 # “The best time to plant a tree was 20 years ago. The second best time is now.”
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 [scalatypeoftypes]: http://ktoso.github.io/scala-types-of-types/
