@@ -3,6 +3,7 @@ layout: page
 title: About Me
 permalink: /about/
 ---
+![Glacier Is Amazing]({{ site.url }}/assets/about_me_banner.jpg)
 
 Raised on a farm in the Idaho wilderness, I have worked in the slums of Mexico, the bustling streets of Hong Kong and the chaotic yet wonderful Shanghai. I set a 10 year record at The University of Notre Dame in the Hammer Throw, and taught High School in rural Idaho and inner-city Chicago.
 
