@@ -3,7 +3,7 @@ layout: post
 title:  "Beginning Testing in Scala"
 date:   2017-07-06 12:00:00 -0500
 categories: scala scalatest TDD
-
+excerpt_separator: <!--more-->
 ---
 # Philosophy of Testing - Embrace the Blue Sky
 
@@ -20,7 +20,7 @@ Test Driven Development lets you define how methods, classes, and objects should
 Programming without first defining the behavior is like walking out into a snow storm with a fern, digging in the rock hard soil, and expecting it to grow.  Yes, we can build a shelter around the fern and set up a space heater, but it is way more work. 
 
 Embrace the blue sky, define your path before you begin.
-
+<!--more-->
 # Beginning Testing in Scala
 
 Testing in Scala can be very straight forward if the code is structured correctly. If the code is poorly structured it can be like planting a fern in a blizzard: tough, painstaking, and ultimately not that productive. 

@@ -1,0 +1,25 @@
+.pagination-list{ 
+  li {
+    list-style: none;
+    display: block;
+    .newer {
+      float: right;
+    }
+    .older {
+      float: left;
+    }
+  }
+
+
+  a, a:visited, a:active {
+    color: darkgrey;
+    text-decoration: none;
+    border: 1px solid lightgrey;
+    padding: 5px 10px;
+    
+  }
+  a:hover {
+    background-color: lightgrey;
+  }
+
+}

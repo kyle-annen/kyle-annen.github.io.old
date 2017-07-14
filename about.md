@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About Me
-permalink: /about/
+permalink: /about.html
 ---
 ![Glacier Is Amazing]({{ site.url }}/assets/about_me_banner.jpg)
 

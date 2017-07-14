@@ -3,7 +3,7 @@ layout: post
 title:  "Self Guided Learning - A Retrospective"
 date:   2017-06-26 18:00:00 -0500
 categories: ruby rails node js es6 8th-Light
-
+excerpt_separator: <!--more-->
 ---
 
 ![The Long Path to the Mountains]({{ site.url }}/assets/glacier_pano.jpg)
@@ -22,7 +22,7 @@ While there is no one path, I will share my thoughts on how I would have proceed
 *Dev-bootcamps, online-bootcamps, programming courses, open courseware, interactive online programming platforms, books from the bookstore, coding clubs, and Meetups.* 
 
 The resources available to new programmers are truly endless, as there is no possible way to read and complete them all before more are generated. It was such an information overload that it took me about a year to even have a semblance of a path.  
-
+<!--more-->
 Today I can say with confidence that Javascript is an excellent and efficient place to start. Every interactive webpage needs, at a minimum, Javascript, HTML and CSS. 
 
 In the current climate I would highly suggest starting with Javascript. 

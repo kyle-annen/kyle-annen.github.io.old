@@ -21,12 +21,25 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: kylehmrtime
 github_username: kyle-annen 
+excerpt_seperator: "<!--excerpt-->"
 
 # Build settings
 markdown: kramdown
 theme: minima
 plugins_dir:
   - jekyll-feed
+gems: 
+  - jekyll-paginate-v2
+
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 2
+  permalink: '/page/:num/'
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -39,3 +52,7 @@ plugins_dir:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+############################################################
+# Site configuration for the Jekyll 3 Pagination Gem
+# The values here represent the defaults if nothing is set

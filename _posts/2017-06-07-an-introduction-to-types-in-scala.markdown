@@ -2,23 +2,26 @@
 layout: post
 title:  "An Introduction to Types in Scala"
 date:   2017-07-07 12:00:00 -0500
-categories: scala types static-typing 
+categories: scala types static-typing
+excerpt_separator: <!--more-->
 
 ---
 
 # Static Typing in Scala - Rock Solid
 
-![Glacier National Park]({{ site.url }}/assets/static-type-mountain.jpg)
+![sergovia aqueduct]({{ site.url }}/assets/aqueduct.jpg)
 
-Before I had used any statically typed languages, static types looked cumbersome, verbose, inflexible and overall very unappealing. The flexibility of Javascript made everything seem possible.  It made me feel like I could do anything, build anything, that everything I wrote was good enough.  It worked, didn't it? Why would it not be right...
+*The Aqueduct of Segovia was built by the Roman Empire around 112AD. It has stood the test of time and transports water today. Few structures built today have a hope of lasting as long.*
+
+Before I had used any statically typed languages, static types looked cumbersome, verbose, inflexible and overall unappealing. With Javascript everything seems possible. It worked, didn't it? Why would it not be right...
 
 After a few weeks with Scala and using static types throughout my project, I have come to realize that static typing is actually a benefit.  It requires you to sit and think about each line of code, about the purpose of every method.  It makes you more introspective about the significance of the code, makes you examine choosing one path over another.
 
 # Why Types
 
-Static types allow the compiler to throw an error at compile time, instead of waiting until runtime.  
+Static types allow the compiler to throw an error at compile time, instead of waiting until runtime.
 
-Why do we care? That precisely the subject of this post.
+Why do we care? That is precisely the subject of this post.
 
 # This is Not The Greatest Guide, it is Only a Tribute
 
@@ -27,11 +30,11 @@ Why do we care? That precisely the subject of this post.
 This post is purely intended as a general primer to types in Scala, and mostly a long winded exploration of my train of thought during my own exploration.  If you are looking for a more in depth look into Type Hierarchy and Abstract Types, an excellent article by ***Konrad "ktoso" Malawski*** can be found here: [Scala’s Types of Types][scalatypeoftypes].
 
 It is incredibly detailed an excellent resource.
-
+<!--more-->
 # Type Ascription
 ***Type Ascription*** is how we explicitly define a type in Scala.  If you do not use Type Ascription the compiler will attempt to guess, or infer, the Type. This is called ***Type Inference***.
 
-For the following exercises I will be using the Scala REPL, if you have Scala installed you can simply open a terminal and type: 
+For the following exercises I will be using the Scala REPL, if you have Scala installed you can simply open a terminal and type:
 
 ``` bash
 $ scala
@@ -48,7 +51,7 @@ Alternatively, we can use Type Ascription to explicitly set the type. The syntax
 
 In the example below, we will use the type ***String***.
 
-``` scala 
+``` scala
 scala> val text: String = "Scalabrasaurus"
 //> text: String = Scalabrasaurus
 ```
@@ -64,27 +67,27 @@ scala> val text: String = 1
 //>  required: String
 //>        val text: String = 1
 //>                           ^
-``` 
+```
 
-Now, there's the power. This error will throw very specific indications of what violates the explicit Type Ascription that is assigned using static typing.  It forces us to ensure we are not passing values around willy-nilly.  
+Now, there's the power. This error will throw very specific indications of what violates the explicit Type Ascription that is assigned using static typing.  It forces us to ensure we are not passing values around willy-nilly.
 
-If you have ever seen a British Queue vs a Chinese Mob waiting for the bus, this is somewhat like the former; everything in its place. 
+If you have ever seen a British Queue vs a Chinese Mob waiting for the bus, this is somewhat like the former; everything in its place.
 
-Perfect.  Let's get organized.  
+Perfect.  Let's get organized.
 
 # Types and Methods
 
-It becomes more complex when defining a method, as we can assign static types to both the arguments and the return value of the method.  
+It becomes more complex when defining a method, as we can assign static types to both the arguments and the return value of the method.
 
 Here is an example.
 
-``` scala 
+``` scala
 def methodEx(arg1: Int, arg2: String): String = arg1 * arg2
 ```
 
 Here is the same method, re-written to be descriptive of purpose, the purpose being to repeat a given string ***(s)*** a certain number of times ***(n).***
 
-``` scala 
+``` scala
 scala> def repeatString(s: String, n: Int): String = s * n
 //> repeatString: (s: String, n: Int)String
 
@@ -104,11 +107,11 @@ First, that is a ton of ***String*** Type Ascriptions. The more time you spend w
 
 Firstly we have the argument Ascriptions:
 
-1. ```s: String``` 
+1. ```s: String```
 - ascribes the ***String*** type to the argument ***s***
 2. ```modifier: String => String```
 - ascribes a ***String*** input with a ***String*** output for the passed method
-3. ```modifyString(): String``` 
+3. ```modifyString(): String```
 - ascribes a return type of ***String*** for the main method
 
 Let's see it in action.
@@ -140,7 +143,7 @@ def modifyString(s: String, modifier: (String, Int) => String): String = {
 
 Right, right... Give the REPL another shot at it.
 
-``` scala 
+``` scala
 scala> def modifyString(s: String, modifier: (String, Int) => String): String = {
      |   "<p>" + modifier(s) + "</p>"
      | }
@@ -155,11 +158,11 @@ Here the REPL informs us that we have another error, it seems we forgot the ***I
 def modifyString(s: String, modifier: (String, Int) => String): String = {
   "<p>" + modifier(s, 3) + "</p>"
 }
-``` 
+```
 
 And if we run it all again in the REPL:
 
-``` scala 
+``` scala
 scala> def modifyString(s: String, modifier: (String, Int) => String): String = {
      |   "<p>" + modifier(s, 3) + "</p>"
      | }
