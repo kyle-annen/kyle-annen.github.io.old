@@ -9,3 +9,10 @@ h1 {
 h2, h3, h4, h5, p, .site-title {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;   
 }
+
+.site-title,
+.site-title:hover,
+.site-title:active,
+.site-title:visited {
+  text-decoration: none;
+}
