@@ -28,19 +28,11 @@ markdown: kramdown
 theme: minima
 plugins_dir:
   - jekyll-feed
-gems: 
-  - jekyll-paginate-v2
+gems:
+  - jekyll-paginate
 
 # Pagination Settings
-pagination:
-  enabled: true
-  per_page: 2
-  permalink: '/page/:num/'
-  title: ':title - page :num'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-
+paginate: 2
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

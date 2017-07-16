@@ -1,43 +1,11 @@
 ---
 layout: default
-pagination:
-  enabled: true
 ---
 
 <div class="home">
   <div class="body-grid">
 
     {{ content }}
-
-    <ul class="post-list">
-      {% for post in paginator.posts %}
-        <li>
-          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-          <h2>
-            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-          </h2>
-          <p>{{ post.excerpt }}</p>
-          <a href="{{ post.url | relative_url }}">continue reading....</a>
-        </li>
-      {% endfor %}
-    </ul>
-
-    {% if paginator.total_pages > 1 %}
-    <ul class="pagination-list">
-      {% if paginator.previous_page %}
-      <li>
-        <a class="newer" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer > </a>
-      </li>
-      {% endif %}
-      {% if paginator.next_page %}
-      <li>
-        <a class="older" href="{{ paginator.next_page_path | prepend: site.baseurl }}"> < Older</a>
-      </li>
-      {% endif %}
-    </ul>
-    {% endif %}
   </div>
 
   <div class="tag-grid">
@@ -53,8 +21,6 @@ pagination:
         -->
       </li>
     {% endfor %}
-
-
   </div>
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 </div>
