@@ -30,6 +30,9 @@ plugins_dir:
   - jekyll-feed
 gems:
   - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  
 
 # Pagination Settings
 paginate: 2
