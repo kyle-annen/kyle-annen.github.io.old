@@ -25,6 +25,7 @@ excerpt_seperator: "<!--excerpt-->"
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 theme: minima
 plugins_dir:
   - jekyll-feed
@@ -32,6 +33,7 @@ gems:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-seo-tag
+  - rouge
   
 
 # Pagination Settings

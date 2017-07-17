@@ -16,7 +16,7 @@ excerpt_separator: <!--more-->
 Before I had used any statically typed languages, static types looked cumbersome, verbose, inflexible and overall unappealing. With Javascript everything seems possible. It worked, didn't it? Why would it not be right...
 
 After a few weeks with Scala and using static types throughout my project, I have come to realize that static typing is actually a benefit.  It requires you to sit and think about each line of code, about the purpose of every method.  It makes you more introspective about the significance of the code, makes you examine choosing one path over another.
-
+<!--more-->
 # Why Types
 
 Static types allow the compiler to throw an error at compile time, instead of waiting until runtime.
@@ -30,7 +30,7 @@ Why do we care? That is precisely the subject of this post.
 This post is purely intended as a general primer to types in Scala, and mostly a long winded exploration of my train of thought during my own exploration.  If you are looking for a more in depth look into Type Hierarchy and Abstract Types, an excellent article by ***Konrad "ktoso" Malawski*** can be found here: [Scala’s Types of Types][scalatypeoftypes].
 
 It is incredibly detailed an excellent resource.
-<!--more-->
+
 # Type Ascription
 ***Type Ascription*** is how we explicitly define a type in Scala.  If you do not use Type Ascription the compiler will attempt to guess, or infer, the Type. This is called ***Type Inference***.
 
