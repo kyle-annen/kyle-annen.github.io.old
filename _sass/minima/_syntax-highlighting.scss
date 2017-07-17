@@ -6,7 +6,7 @@
   @extend %vertical-rhythm;
 
   .highlighter-rouge & {
-    background: #eef;
+    background: white;
   }
 
   .c     { color: #998; font-style: italic } // Comment
@@ -68,4 +68,10 @@
   .vg    { color: #008080 } // Name.Variable.Global
   .vi    { color: #008080 } // Name.Variable.Instance
   .il    { color: #099 } // Literal.Number.Integer.Long
+}
+
+pre, code {
+  background-color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1em;
 }
