@@ -11,23 +11,23 @@ excerpt_separator: <!--more-->
 
 
 
-Traits, abstract classes and class can all be used to create a new class which draws from the others. Think of it like mixing and matching, but with some rules about what you can do with each.
+Traits, abstract classes and classes can all be used to create a new class which draws from the others. Think of it like mixing and matching, but with some rules about what you can do with each.
 
-The goal, create abstraction without having your code becoming a monolith monster!
+The goal, create abstraction without having your code become a monolithic monster!
 
 It took quite a while to wrap my head around the concept, so here is the most straight forward explanation I can give.
 <!--more-->
 # Classes
 
-A class is the easiest of the three to comprehend. Everything in Scala is an object, so is a class. The difference between a class and a singleton object (an object that is declared on its own) is that a class has to be instantiated, or created. This makes it more powerful than a singleton object, as you can have multiple instantiations of a class running around on different threads.  
+A class is the easiest of the three to comprehend. Everything in Scala is an object, so is a class. The difference between a class and a singleton object (an object that is declared on its own) is that a class is used to instantiate an object. It can also be used as a static type in Scala's type checking system. This makes it more powerful than a singleton object, as you can have multiple instantiations running around on different threads without interfering with one another.
 
 It may help to think of a class as a recipe, and an object the outcome of the recipe.  In our case, a recipe for a monster...
 
-On the flip side, if you reference an object in your codebase, and run multiple tests on that object (as you absolutely should), different threads may run tests simultaneously and be accessing the same object at the same time.  This is not a problem if you code is immutable, but if there is any mutability then each thread will be mutating and your tests will be polluted.  
+On the flip side, if you reference an object in your codebase, and run multiple tests on that object (as you absolutely should), different threads may run tests simultaneously and be accessing the same object at the same time.  This is not a problem if you code is immutable, but if there is any mutability then each thread will be mutating and your tests will be polluted.
 
 If you refactor the object to a class, you will also need to add instantiation of the class as well, but each new instance of the class will not interact with each other unless directed to do so.  Let's create a class called Monster which can be alive, or not. It will also be able to move We will instantiate Monster with the val blob.
 
-``` scala 
+``` scala
 class Monster {
   val isAlive: Boolean = true
   val canMove: Boolean = true
