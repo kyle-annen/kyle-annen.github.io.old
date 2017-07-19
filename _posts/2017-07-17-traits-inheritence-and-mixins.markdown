@@ -25,7 +25,7 @@ It may help to think of a class as a recipe, and an object the outcome of the re
 
 On the flip side, if you reference an object in your codebase, and run multiple tests on that object (as you absolutely should), different threads may run tests simultaneously and be accessing the same object at the same time.  This is not a problem if you code is immutable, but if there is any mutability then each thread will be mutating and your tests will be polluted.
 
-If you refactor the object to a class, you will also need to add instantiation of the class as well, but each new instance of the class will not interact with each other unless directed to do so.  Let's create a class called Monster which can be alive, or not. It will also be able to move We will instantiate Monster with the val blob.
+If you refactor the object to a class, you will also need to add instantiation of the class as well, but each new instance of the class will not interact with each other unless directed to do so.  Let's create a class called Monster which can be alive, or not, and should also be able to move. We will instantiate Monster with the val blob.
 
 ``` scala
 class Monster {
@@ -88,20 +88,20 @@ yog.tentacleCount
 
 # Abstract Classes
 
-The main reason to use an abstract class is if you want a class that requires constructor arguments, meaning that you want to pass arguments to the abstract class when creating a class object instance. One caveat is that you can only have use one abstract class at a time. 
+The main reason to use an abstract class is if you want a class that requires constructor arguments, meaning that you want to pass arguments to the abstract class when creating a class object instance. One caveat is that you can only use one abstract class at a time.
 
-One important thing that we need to consider when making monster is the size, that cannot be left to chance.
+One important thing that we need to consider when making monsters is size, that cannot be left to chance.
 
-Here is an abstract class, we will use the class name **Size**. Lets also give it a body in the size class, just for fun.
+For this abstract class we will use the class name **Size** and also give it a body, just for fun.
 
-``` scala 
+``` scala
 abstract class Size(s: String) {
   val size: String = s
   val hasBody: Boolean = true
 }
 ```
 
-Now we can redefine our monster class to extend Size with **cosmic**, because if we are going to make monster, why not make them big?
+We can now redefine our monster class to extend Size with **cosmic**, because if we are going to make a monster it better be a good on?
 
 ``` scala
 class Monster extends Size("Cosmic") {
@@ -111,7 +111,7 @@ class Monster extends Size("Cosmic") {
 //> defined class Monster
 ```
 
-Now we are rip-roarin' and ready to go. Let's make our magnum opus.
+Now we're rip-roarin' and ready to go. It is time to use all of our tools to create a truly marvelous monter.
 
 ``` scala
 val cthulhu = new Monster with Tentacles
@@ -140,7 +140,7 @@ cthulhu.size
 //> res14: String = Cosmic
 ```
 
-Everything looks cosmic, monstery, tenticaly, and alive. 
+Everything looks cosmic, monstery, tenticaly, and alive.
 
 I hope this may have clarified a subject that took me way to long to comprehend, and hopefully it was a bit more colorful that a manual.  Here's the glorious creation...
 
