@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Exploding Parameters and Arguments"
-date:   2017-07-23 12:00:00 -0500
+date:   2017-07-24 12:00:00 -0500
 categories: scala design
 excerpt_separator: <!--more-->
 ---
