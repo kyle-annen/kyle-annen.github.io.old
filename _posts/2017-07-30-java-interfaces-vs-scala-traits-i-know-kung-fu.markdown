@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Java Interfaces vs Scala Traits: I Know Kung Fu Now"
-date:   2017-07-30 12:00:00 -0500
+date:   2018-07-30 12:00:00 -0500
 categories: scala design
 excerpt_separator: <!--more-->
 ---
