@@ -8,7 +8,7 @@ excerpt_separator: <!--more-->
 
 ![KungFu]({{ site.url }}/assets/kungfu.jpg)
 
-Scala is often billed as the better Java.  When exploring polymorphism in Scala and Java, it may be confusing that the language features that provide this abstraction are named in a way that may be confusing. 
+Scala is often billed as the better Java.  When exploring abstraction in Scala and Java, it may be confusing that the language features that provide this abstraction are named in a way that may be confusing. 
 
 Scala and Java both have classes. Today I will be discussing how to define a common interface, or how to define how a class should implement a common set of values and methods. 
 <!--more-->
