@@ -10,6 +10,8 @@ excerpt_separator: <!--more-->
 
 In implementing the AI for a TicTacToe game, I was prompted to transition from a head recursive algorithm to a tail recursive one.
 
+And you know what that mean folks, a gosh darn showdown at high noon! We are going to pit these two lilly livered (and a bit long winded) algorithms against one another and see if they have any grit.
+
 First things first, why should we care? Tail recursion does not increase the call stack, or the number of method calls that have to be stored in memory prior to executing the code. 
 <!--more-->
 Mathematically **head recursion** would look something like the function below.  After evaluating **f(x)**, we add one.  Then evaluate the wrapping function with the result, add one again, and continue until there are no more wrapping functions.  This type of call is extremely memory intensive, as it has to hold all the values and methods in memory until the result is found. 
