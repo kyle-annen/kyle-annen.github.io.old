@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "SQL Indexing - Bring the SPEED"
-date:   2017-07-31 12:00:00 -0500
+date:   2017-08-01 12:00:00 -0500
 categories: sql database indexing db
 excerpt_separator: <!--more-->
 ---
