@@ -6,6 +6,7 @@ categories: coupling adaptive-programming maintainability
 excerpt_separator: <!--more-->
 ---
 ![berlin]({{ site.url }}/assets/berlinmap.gif)
+
 Coupling refers to how dependent a module is on the functions of other models. Imagine a public transit system that ceased functioning whenever one train goes out of commission.
 
 <!--more-->
