@@ -110,7 +110,7 @@ public class PrettyPrinter {
 
 Perfect.  Next, I want to be able to print out in color.  Glorious, eighties nostalgic green on black terminal goodness. How else could we hope to match the glory of hackerman?
 
-To do this we add two new methods, both of which accept a second String argument 
+To do this we add two new methods, both of which accept a second String argument for color.
 
 ``` java 
 public class PrettyPrinter {
