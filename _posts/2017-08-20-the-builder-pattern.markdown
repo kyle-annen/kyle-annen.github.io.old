@@ -16,9 +16,9 @@ I often find myself struggling with two of the SOLID design principles of softwa
 
 ## Single Responsibility
 
-The Open/Closed Principal states that a class should only have a single responsibility.  As I begin tackling the inevitable new language on a new project, my functions become bloated as I try to hack together something, anything, that works.  
+The Single Responsibility Principal states that a class should only have a single responsibility.  As I begin tackling the inevitable new language on a new project, my functions become bloated as I try to hack together something, anything, that works.  
 
-Bloated functions are simple enough to solve, isolating specific functions which you can replace with a sentence to describe the action a block of code is performing.  
+Bloated functions are simple enough to solve, isolating specific functions whose purpose can be describe with a phrase are good candidate for refactoring.
 
 This bit of Java over here parsed the HTTP verb out of a http request header. We can refactor this block into a function:
 
