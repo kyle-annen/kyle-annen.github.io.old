@@ -11,6 +11,7 @@ The Solid principles of software design are five principles that make up the pne
 <span class="formula">$$S = Single\;responsibility\;principle$$</span><br/>
 <span class="formula">$$O = Open/closed\;principle$$</span><br/>
 <span class="formula">$$L = Liskov\;substitution\;principle$$</span><br/>
+<span class="formula">$$I = Interface\;segregation\;principle$$</span><br/>
 <span class="formula">$$D = Dependency\;inversion\;principle$$</span>
 
 
