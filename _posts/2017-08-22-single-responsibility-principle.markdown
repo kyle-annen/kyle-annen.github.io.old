@@ -121,7 +121,7 @@ The function ***buildRequestUrl*** builds a request URL.
 
 > If there is only one reason now that this function should change, that is if the API changes.  If the API changes, now this is the only function that will have to be changed in the future.
 
-The function ***getUrlResponse** uses the request URL and gets the response from the API (1 input, 1 output).
+The function ***getUrlResponse*** uses the request URL and gets the response from the API (1 input, 1 output).
 
 > There is now only one reason to change this function, and that is if the API provider moves away from a Rest API.  
 
