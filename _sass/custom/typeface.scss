@@ -10,6 +10,21 @@ h2, h3, h4, h5, p, .site-title {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
+blockquote > p {
+}
+
+blockquote {
+  border: none;
+  margin-left: 30px;
+  margin-right: 40px;
+  border-left: 1px solid lightgrey;
+}
+
+blockquote > blockquote {
+  border-left: none;
+
+}
+
 .post-content > h1, 
 .post-content h2,
 .post-content h3,
