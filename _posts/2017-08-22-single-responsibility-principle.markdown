@@ -23,7 +23,7 @@ A single responsibility not only makes for more readable code, it also allows fo
 If we use tools as an analogy, a single responsibility tool is very good at one type of use. It is better to build a tool set with pieces you can reuse in different places than to rebuild a tool for each task.
 
 ![tools]({{site.url}}/assets/pottery-tools.jpg)
-
+<!---more--->
 # Single responsibility in action
 
 To give a working example to elucidate the single responsibility principle we will build an class to grab weather information from an API.  The goal is to check the weather as it is, at the exact moment the tool is run, in the location it is run from.
