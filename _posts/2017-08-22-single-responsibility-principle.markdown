@@ -16,6 +16,7 @@ The Solid principles of software design are five principles that make up the pne
 
 
 The single responsibility principle states that a class or method should only be responsible for one thing, or only have one reason to change. 
+<!--more-->
 
 The single responsibility can often be stated in a written sentence, simple to write and simple to understand.  This is "smell test" for the single responsibility principle. If the sentence is a run-on or a compound sentence it most likely has more than one responsibility. 
 
@@ -24,7 +25,7 @@ A single responsibility not only makes for more readable code, it also allows fo
 If we use tools as an analogy, a single responsibility tool is very good at one type of use. It is better to build a tool set with pieces you can reuse in different places than to rebuild a tool for each task.
 
 ![tools]({{site.url}}/assets/pottery-tools.jpg)
-<!---more--->
+
 # Single responsibility in action
 
 To give a working example to elucidate the single responsibility principle we will build an class to grab weather information from an API.  The goal is to check the weather as it is, at the exact moment the tool is run, in the location it is run from.
