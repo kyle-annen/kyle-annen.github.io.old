@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Not Your Grandad's CIDR - Classless Inter-Domain Routing
-date:   2017-09-04 12:00:00 -0500
+date:   2017-09-11 12:00:00 -0500
 categories: Solid
 excerpt_separator: <!--more-->
 ---
