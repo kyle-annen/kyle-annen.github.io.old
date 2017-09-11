@@ -97,7 +97,9 @@ If we examine the different groups as allocated by Class, and we think about the
 
 The largest block contains three full octet blocks worth of addresses.  This means that organizations with Class A allocations of IP addresses had 65,536 address at their disposal, a number to large for most organizations.  The smallest block is 8 bits, or 256 possible addresses, which is too small for most enterprises.  The linking to powers of two inherent to the binary address allocation by the least significant bit was simple in implementation but lacked any real addressing of the issues to come with a growing internet.
 
-# Introducing CIDR
+![classless]({{ site.url }}/assets/classless.jpg)
+
+# CIDR - Classless Inter-domain Routing
 
 Classless inter-domain routing is based on variable length subnet masking (VLSM). Variable length subnet masking allows a network to be logically sized more appropriately based on the needs of the network.
 
