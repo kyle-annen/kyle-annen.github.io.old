@@ -8,6 +8,8 @@ excerpt_separator: <!--more-->
 
 REST, or representational state transfer, is a method of communicating between nodes on a network using stateless textual representations of resources using a uniform set of operations.
 
+<!--more-->
+
 Roy Fielding developed REST as a compliment to HTTP/1.1, and defined it's implementation in his 2000 PHD dissertation at UC Irvine. The dissertation outlines the architecture of the web and a stateless standard of communication.  The dissertation, "Architectural Styles and the Design of Network-based Software Architectures", is incredibly in depth and serves as one of the foundations for our thought patterns around modern stateless communication. While many of the ideas and descriptions are widely shared among the tech community in daily discourse, it is intriguing and informing at a more foundational level to read the thought patterns of the visionaries of the modern internet.
 
 The dissertation is available in it's entirety [here][ucpaper].
