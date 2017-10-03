@@ -32,7 +32,7 @@ Luckily many of the affected ex loggers and millwrights were provided with some 
 
 # Intelligence, the bad word
 
-The dictionary definition of intelligence is the ability to acquire and apply knowledge and skill. This definition while accurate in the academic sense does accurately capture the perceptions of the world for those educated in recent American history. For those in their 30s and beyond, intelligence is the innate ability to rapidly understand and apply knowledge at a rate faster than the norm.
+The dictionary definition of intelligence is the ability to acquire and apply knowledge and skill. This definition while accurate in the academic sense does accurately capture the perceptions of the word for those educated in recent American history. For those in their 30s and beyond, intelligence is the innate ability to rapidly understand and apply knowledge at a rate faster than the norm.
 
 In order to teach those that are not used to failure, we have to redefine the word intelligence. Better yet, we should eliminate the correlation of intelligence and ability to gain new skills outside of ones comfort zone. The use of the words persistence and hard-word is more in sync with the life experiences of the men and women who spent their working lives dodging trees and sweating deep under the ground.  These are words they identify with, and hold deep pride in.
 
