@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Testing a Combined Scala and Java Project with SBT
-date:   2017-09-25 12:00:00 -0500
+date:   2017-10-02 12:00:00 -0500
 categories: Testing Scala Java
 excerpt_separator: <!--more-->
 ---

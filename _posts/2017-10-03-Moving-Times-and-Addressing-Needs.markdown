@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Movement of Time, Addressing Needs and Sharing Expertise
-date:   2017-09-25 12:00:00 -0500
+date:   2017-10-03 12:00:00 -0500
 categories: 
 excerpt_separator: <!--more-->
 ---
