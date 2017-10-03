@@ -12,6 +12,8 @@ While the inter-operability has significant up sides, there are some pains when 
 
 Utilizing libraries is a breeze, as we don't have to test the code that we don't own.  However, when implementing both Scala and Java within a project we do have to ensure there is sufficient automated testing in place.
 
+<!--more-->
+
 # Behind the curve
 
 Currently JUnit 5 is unsupported through the libraries that integrate JUnit testing with SBT.  For the time being it is best to use JUnit 4, which greatly simplifies the integration process.
