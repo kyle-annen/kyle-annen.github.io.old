@@ -14,6 +14,8 @@ At 8th light apprentices meet four times a week for a talk given by one of the C
 
 This week we meet with an group doing some very important and honorable work.  Mined Minds works to relieve the vast economic hardships of the closing coal mines in the appalachians.
 
+<!--more-->
+
 The closing mines have left rifts through small town USA leaving despair and a vast lack of employment opportunities. Their mission is to teach programming to displaced coal miners, to mine the minds left in wake of a changing world.
 
 This type of economic hardship in small towns has occurred in other areas of the USA at different times in history.
