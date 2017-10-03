@@ -18,6 +18,8 @@ This week we meet with an group doing some very important and honorable work.  M
 
 The closing mines have left rifts through small town USA leaving despair and a vast lack of employment opportunities. Their mission is to teach programming to displaced coal miners, to mine the minds left in wake of a changing world.
 
+You can read more about Mined Mines and their incredibly noble pursuits [here][minedmines].
+
 This type of economic hardship in small towns has occurred in other areas of the USA at different times in history.
 
 ![loggers]({{ site.url }}/assets/loggers.jpg)
@@ -45,3 +47,5 @@ The news has been inundated with stories centered around the fears of industry v
 Knowledge was guarded for most of human history. Libraries reserved for an elite few. Technology horded. Active subjugation through the withholding of power. Knowledge used to control.
 
 By freeing this knowledge we become better than we could alone. This is more evident than ever as the world relies more and more on open source software, the releasing of patents for batteries and electric motors to the public space, and by bring worlds together through tutelage and the open exchange ideas.
+
+[minedmines]:http://www.minedminds.org/
