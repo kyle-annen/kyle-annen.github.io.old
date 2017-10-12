@@ -15,7 +15,9 @@ excerpt_separator: <!--more-->
 # Main Dependencies
 -------
 ### Tic Tac Toe: Scala
-<img src="https://travis-ci.org/kyle-annen/scala-tictactoe.svg?branch=master"/> <a href='https://coveralls.io/github/kyle-annen/scala-tictactoe?branch=scoverage'><img src='https://coveralls.io/repos/github/kyle-annen/scala-tictactoe/badge.svg?branch=scoverage' alt='Coverage Status' /></a>
+<img src="https://travis-ci.org/kyle-annen/scala-tictactoe.svg?branch=master"/> 
+<a href='https://coveralls.io/github/kyle-annen/scala-tictactoe?branch=scoverage'><img src='https://coveralls.io/repos/github/kyle-annen/scala-tictactoe/badge.svg?branch=scoverage' alt='Coverage Status' /></a>
+<a class="badge-align" href="https://www.codacy.com/app/kyle-annen/scala-tictactoe?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kyle-annen/scala-tictactoe&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/068dd8bb9d70458685228ec9fab3c164"/></a>
 
 <strong><a href="https://github.com/kyle-annen/scala-tictactoe">Github</a> -- <a href="https://clojars.org/repo/org/clojars/kyleannen/tictactoe/">Clojars Artifact</a></strong>
 
@@ -63,7 +65,9 @@ Requirements for the TicTacToe in Scala:
 - Expose core functionality
 
 ### JavaServer: Java
-<img src="https://travis-ci.org/kyle-annen/java-server.svg?branch=master"/> <a href='https://coveralls.io/github/kyle-annen/java-server?branch=add-coveralls'><img src='https://coveralls.io/repos/github/kyle-annen/java-server/badge.svg?branch=add-coveralls' alt='Coverage Status' /></a>
+<img src="https://travis-ci.org/kyle-annen/java-server.svg?branch=master"/> 
+<a href='https://coveralls.io/github/kyle-annen/java-server?branch=add-coveralls'><img src='https://coveralls.io/repos/github/kyle-annen/java-server/badge.svg?branch=add-coveralls' alt='Coverage Status' /></a>
+<a class="badge-align" href="https://www.codacy.com/app/kyle-annen/java-server?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kyle-annen/java-server&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/5b6cc4b4e1d5471992b778e9ee55cfa6"/></a>
  
 <strong><a href="https://github.com/kyle-annen/java-server">Github</a> -- <a href="https://clojars.org/repo/org/clojars/kyleannen/javaserver/">Clojars Artifact</a></strong>
 
@@ -123,7 +127,11 @@ Requirements for Java Http Server:
 
 # Specialized Servers
 -------
-### File Form Directory Server <img src="https://travis-ci.org/kyle-annen/file-directory-form-server.svg?branch=master"/>
+### File Form Directory Server: Scala
+<img src="https://travis-ci.org/kyle-annen/file-directory-form-server.svg?branch=master"/>
+<a class="badge-align" href="https://www.codacy.com/app/kyle-annen/file-directory-form-server?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kyle-annen/file-directory-form-server&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/ad8a59824c1a449ba7856a0754fc741d"/></a>
+
+  There is no code coverage as it is only configuration of a dependency. The entire codebase for this artifact is below.
 
 <strong>Dependencies:</strong> JavaServer
 
@@ -133,8 +141,36 @@ org.clojars.kyleannen.filedirectoryformserver
 
 The File Form Directory Server implements the dynamic directory routing, dynamic file routing, and the form funtions of the JavaServer and exposes them through a browser window.
 
+The code below checks for an Evironment variable of *PORT* and configures the server, then starts the server.
 
-### Html Tic Tac Toe Server <img src="https://travis-ci.org/kyle-annen/webtictactoe.svg?branch=master"/>
+```scala
+package com.github.kyleannen.filedirectoryformserver
+
+import org.clojars.kyleannen.javaserver.{ConfigureServer, ControllerForm, Router}
+
+import scala.util.Properties
+
+object Server {
+  def start(): Unit = {
+    val router = new Router()
+    router.addRoute("GET", "/form", new ControllerForm)
+    val port: String = Properties.envOrElse("PORT", "3434")
+    val args: Array[String] = Array("-p", port)
+    val server = new ConfigureServer().configure(args, router)
+    server.run()
+  }
+
+  def main(args: Array[String]): Unit = {
+    start()
+  }
+}
+```
+
+
+### HTML TicTacToe Server: Scala / Java
+<img src="https://travis-ci.org/kyle-annen/webtictactoe.svg?branch=master"/>
+<a href='https://coveralls.io/github/kyle-annen/webtictactoe?branch=codacy'><img src='https://coveralls.io/repos/github/kyle-annen/webtictactoe/badge.svg?branch=codacy' alt='Coverage Status' /></a>
+<a class="badge-align" href="https://www.codacy.com/app/kyle-annen/webtictactoe?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kyle-annen/webtictactoe&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/42297307cdec4a7b833aa75b96aa40bd"/></a>
 
 <strong>Dependencies:</strong> JavaServer, TicTacToe
 
@@ -144,9 +180,10 @@ org.clojars.kyleannen.webtictactoe
 
 A static HTML server that serves up a static TicTacToe game.  The open spaces are links which submit the game parameters through url parameters. A custom controller and a additional Scala object are used to interact with the TicTacToe artifact, generate updated HTML for the next state of the game, and pass the new game board static HTML page back to the client.
 
-### JSON TicTacToe Server
+### JSON TicTacToe Server: Scala / Java
 <img src="https://travis-ci.org/kyle-annen/jsonserver.svg?branch=master"/>
 <a href='https://coveralls.io/github/kyle-annen/jsonserver?branch=coveralls'><img src='https://coveralls.io/repos/github/kyle-annen/jsonserver/badge.svg?branch=coveralls' alt='Coverage Status' /></a>
+<a class="badge-align" href="https://www.codacy.com/app/kyle-annen/jsonserver?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kyle-annen/jsonserver&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/445754ade8ca486897f910c5d145e825"/></a>
 
 
 <strong>Dependencies:</strong> JavaServer, TicTacToe
@@ -188,7 +225,9 @@ Example JSON Response:
 # Servers with JSON API Dependencies
 ------
 
-### Vanilla JS TicTacToe (JsonTicTacToe) <img src="https://travis-ci.org/kyle-annen/jsontictactoe.svg?branch=master"/>
+### JsonTicTacToe: Vanilla JavaScript
+ <img src="https://travis-ci.org/kyle-annen/jsontictactoe.svg?branch=master"/>
+<a class="badge-align" href="https://www.codacy.com/app/kyle-annen/webtictactoe?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kyle-annen/webtictactoe&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/42297307cdec4a7b833aa75b96aa40bd"/></a>
 
 <strong>Dependencies:</strong> JavaServer
 
@@ -202,8 +241,10 @@ The artifact deployed to heroku is a static file server based on the JavaServer 
 
 The response is handled asynchronously via a call back, which updates the game board and messages variables in the module, and renders the updated game board and messages.
 
-### Angular TicTacToe <img src="https://travis-ci.org/kyle-annen/angular-tic-tac-toe.svg?branch=master"/>
-
+### Angular TicTacToe: Angular 2 / Typscript
+<img src="https://travis-ci.org/kyle-annen/angular-tic-tac-toe.svg?branch=master"/>
+<a class="badge-align" href="https://www.codacy.com/app/kyle-annen/angular-tic-tac-toe?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kyle-annen/angular-tic-tac-toe&amp;utm_campaign=Badge_Coverage"><img src="https://api.codacy.com/project/badge/Coverage/f479cbd74c52476193e0a74a54fd4b3a"/></a>
+<a class="badge-align" href="https://www.codacy.com/app/kyle-annen/angular-tic-tac-toe?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kyle-annen/angular-tic-tac-toe&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/f479cbd74c52476193e0a74a54fd4b3a"/></a>
 
 <strong>Dependencies:</strong> JavaServer
 
