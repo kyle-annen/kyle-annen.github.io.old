@@ -14,12 +14,10 @@ excerpt_separator: <!--more-->
 
 # Main Dependencies
 -------
-### Tic Tac Toe: Scala 
+### Tic Tac Toe: Scala
 <img src="https://travis-ci.org/kyle-annen/scala-tictactoe.svg?branch=master"/> <a href='https://coveralls.io/github/kyle-annen/scala-tictactoe?branch=scoverage'><img src='https://coveralls.io/repos/github/kyle-annen/scala-tictactoe/badge.svg?branch=scoverage' alt='Coverage Status' /></a>
 
 <strong><a href="https://github.com/kyle-annen/scala-tictactoe">Github</a> -- <a href="https://clojars.org/repo/org/clojars/kyleannen/tictactoe/">Clojars Artifact</a></strong>
-
-<strong>Clojars artifact:</strong>
 
 org.clojars.kyleannen.tictactoe
 
@@ -146,7 +144,10 @@ org.clojars.kyleannen.webtictactoe
 
 A static HTML server that serves up a static TicTacToe game.  The open spaces are links which submit the game parameters through url parameters. A custom controller and a additional Scala object are used to interact with the TicTacToe artifact, generate updated HTML for the next state of the game, and pass the new game board static HTML page back to the client.
 
-### JSON TicTacToe Server <img src="https://travis-ci.org/kyle-annen/jsonserver.svg?branch=master"/>
+### JSON TicTacToe Server
+<img src="https://travis-ci.org/kyle-annen/jsonserver.svg?branch=master"/>
+<a href='https://coveralls.io/github/kyle-annen/jsonserver?branch=coveralls'><img src='https://coveralls.io/repos/github/kyle-annen/jsonserver/badge.svg?branch=coveralls' alt='Coverage Status' /></a>
+
 
 <strong>Dependencies:</strong> JavaServer, TicTacToe
 
