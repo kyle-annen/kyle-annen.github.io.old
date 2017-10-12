@@ -14,8 +14,8 @@ excerpt_separator: <!--more-->
 
 # Main Dependencies
 -------
-### Tic Tac Toe: Scala <img src="https://travis-ci.org/kyle-annen/scala-tictactoe.svg?branch=master"/> <a href='https://coveralls.io/github/kyle-annen/scala-tictactoe?branch=scoverage'><img src='https://coveralls.io/repos/github/kyle-annen/scala-tictactoe/badge.svg?branch=scoverage' alt='Coverage Status' /></a>
-
+### Tic Tac Toe: Scala 
+<img src="https://travis-ci.org/kyle-annen/scala-tictactoe.svg?branch=master"/> <a href='https://coveralls.io/github/kyle-annen/scala-tictactoe?branch=scoverage'><img src='https://coveralls.io/repos/github/kyle-annen/scala-tictactoe/badge.svg?branch=scoverage' alt='Coverage Status' /></a>
 
 <strong><a href="https://github.com/kyle-annen/scala-tictactoe">Github</a> -- <a href="https://clojars.org/repo/org/clojars/kyleannen/tictactoe/">Clojars Artifact</a></strong>
 
@@ -64,7 +64,9 @@ Requirements for the TicTacToe in Scala:
 - Rewrite MiniMax to use tail recursion.
 - Expose core functionality
 
-### JavaServer: Java <img src="https://travis-ci.org/kyle-annen/java-server.svg?branch=master"/>
+### JavaServer: Java
+<img src="https://travis-ci.org/kyle-annen/java-server.svg?branch=master"/> <a href='https://coveralls.io/github/kyle-annen/java-server?branch=add-coveralls'><img src='https://coveralls.io/repos/github/kyle-annen/java-server/badge.svg?branch=add-coveralls' alt='Coverage Status' /></a>
+ 
 <strong><a href="https://github.com/kyle-annen/java-server">Github</a> -- <a href="https://clojars.org/repo/org/clojars/kyleannen/javaserver/">Clojars Artifact</a></strong>
 
 org.clojars.kyleannen.javaserver
