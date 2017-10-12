@@ -14,7 +14,7 @@ excerpt_separator: <!--more-->
 
 # Main Dependencies
 -------
-### Tic Tac Toe: Scala <img src="https://travis-ci.org/kyle-annen/scala-tictactoe.svg?branch=master"/><a href='https://coveralls.io/github/kyle-annen/scala-tictactoe?branch=scoverage'><img src='https://coveralls.io/repos/github/kyle-annen/scala-tictactoe/badge.svg?branch=scoverage' alt='Coverage Status' /></a>
+### Tic Tac Toe: Scala <img src="https://travis-ci.org/kyle-annen/scala-tictactoe.svg?branch=master"/> <a href='https://coveralls.io/github/kyle-annen/scala-tictactoe?branch=scoverage'><img src='https://coveralls.io/repos/github/kyle-annen/scala-tictactoe/badge.svg?branch=scoverage' alt='Coverage Status' /></a>
 
 
 <strong><a href="https://github.com/kyle-annen/scala-tictactoe">Github</a> -- <a href="https://clojars.org/repo/org/clojars/kyleannen/tictactoe/">Clojars Artifact</a></strong>
