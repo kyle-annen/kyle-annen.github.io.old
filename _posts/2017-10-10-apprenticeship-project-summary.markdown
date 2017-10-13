@@ -66,7 +66,7 @@ Requirements for the TicTacToe in Scala:
 
 ### JavaServer: Java
 <img src="https://travis-ci.org/kyle-annen/java-server.svg?branch=master"/> 
-<a href='https://coveralls.io/github/kyle-annen/java-server?branch=add-coveralls'><img src='https://coveralls.io/repos/github/kyle-annen/java-server/badge.svg?branch=add-coveralls' alt='Coverage Status' /></a>
+<a href='https://coveralls.io/github/kyle-annen/java-server?branch=master'><img src='https://coveralls.io/repos/github/kyle-annen/java-server/badge.svg?branch=master' alt='Coverage Status' /></a>
 <a class="badge-align" href="https://www.codacy.com/app/kyle-annen/java-server?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kyle-annen/java-server&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/5b6cc4b4e1d5471992b778e9ee55cfa6"/></a>
  
 <strong><a href="https://github.com/kyle-annen/java-server">Github</a> -- <a href="https://clojars.org/repo/org/clojars/kyleannen/javaserver/">Clojars Artifact</a></strong>
@@ -169,7 +169,7 @@ object Server {
 
 ### HTML TicTacToe Server: Scala / Java
 <img src="https://travis-ci.org/kyle-annen/webtictactoe.svg?branch=master"/>
-<a href='https://coveralls.io/github/kyle-annen/webtictactoe?branch=codacy'><img src='https://coveralls.io/repos/github/kyle-annen/webtictactoe/badge.svg?branch=codacy' alt='Coverage Status' /></a>
+<a href='https://coveralls.io/github/kyle-annen/webtictactoe?branch=master'><img src='https://coveralls.io/repos/github/kyle-annen/webtictactoe/badge.svg?branch=master' alt='Coverage Status' /></a>
 <a class="badge-align" href="https://www.codacy.com/app/kyle-annen/webtictactoe?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kyle-annen/webtictactoe&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/42297307cdec4a7b833aa75b96aa40bd"/></a>
 
 <strong>Dependencies:</strong> JavaServer, TicTacToe
@@ -182,7 +182,7 @@ A static HTML server that serves up a static TicTacToe game.  The open spaces ar
 
 ### JSON TicTacToe Server: Scala / Java
 <img src="https://travis-ci.org/kyle-annen/jsonserver.svg?branch=master"/>
-<a href='https://coveralls.io/github/kyle-annen/jsonserver?branch=coveralls'><img src='https://coveralls.io/repos/github/kyle-annen/jsonserver/badge.svg?branch=coveralls' alt='Coverage Status' /></a>
+<a href='https://coveralls.io/github/kyle-annen/jsonserver?branch=master'><img src='https://coveralls.io/repos/github/kyle-annen/jsonserver/badge.svg?branch=master' alt='Coverage Status' /></a>
 <a class="badge-align" href="https://www.codacy.com/app/kyle-annen/jsonserver?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kyle-annen/jsonserver&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/445754ade8ca486897f910c5d145e825"/></a>
 
 
