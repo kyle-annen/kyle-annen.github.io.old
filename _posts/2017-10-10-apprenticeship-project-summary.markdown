@@ -16,7 +16,7 @@ excerpt_separator: <!--more-->
 -------
 ### Tic Tac Toe: Scala
 <img src="https://travis-ci.org/kyle-annen/scala-tictactoe.svg?branch=master"/> 
-<a href='https://coveralls.io/github/kyle-annen/scala-tictactoe?branch=scoverage'><img src='https://coveralls.io/repos/github/kyle-annen/scala-tictactoe/badge.svg?branch=scoverage' alt='Coverage Status' /></a>
+<a href='https://coveralls.io/github/kyle-annen/scala-tictactoe?branch=master'><img src='https://coveralls.io/repos/github/kyle-annen/scala-tictactoe/badge.svg?branch=master' alt='Coverage Status' /></a>
 <a class="badge-align" href="https://www.codacy.com/app/kyle-annen/scala-tictactoe?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kyle-annen/scala-tictactoe&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/068dd8bb9d70458685228ec9fab3c164"/></a>
 
 <strong><a href="https://github.com/kyle-annen/scala-tictactoe">Github</a> -- <a href="https://clojars.org/repo/org/clojars/kyleannen/tictactoe/">Clojars Artifact</a></strong>
