@@ -136,7 +136,7 @@ Requirements for Java Http Server:
 
 <strong>Dependencies:</strong> JavaServer
 
-<strong><a href="https://github.com/kyle-annen/file-directory-form-server">Github</a> -- <a href="https://clojars.org/repo/org/clojars/kyleannen/filedirectoryformserver/">Clojars Artifact</a> -- <a href="https://dry-eyrie-10707.herokuapp.com/">Directory</a> -- <a href="https://dry-eyrie-10707.herokuapp.com/form">Form</a> -- <a href="https://dry-eyrie-10707.herokuapp.com/resources">File</a></strong>
+<strong><a href="https://github.com/kyle-annen/file-directory-form-server">Github</a> -- <a href="https://clojars.org/repo/org/clojars/kyleannen/filedirectoryformserver/">Clojars Artifact</a> -- <a href="http://dry-eyrie-10707.herokuapp.com/">Directory</a> -- <a href="http://dry-eyrie-10707.herokuapp.com/form">Form</a> -- <a href="http://dry-eyrie-10707.herokuapp.com/resources">File</a></strong>
 
 org.clojars.kyleannen.filedirectoryformserver
 
@@ -178,7 +178,7 @@ Currently code coverage is working for Scala, percentage will increase as I swit
 
 <strong>Dependencies:</strong> JavaServer, TicTacToe
 
-<strong><a href="https://github.com/kyle-annen/webtictactoe">Github</a> -- <a href="https://clojars.org/repo/org/clojars/kyleannen/webtictactoe/">Clojars Artifact</a> -- <a href="https://young-shelf-68199.herokuapp.com/">Heroku Deploy</a></strong>
+<strong><a href="https://github.com/kyle-annen/webtictactoe">Github</a> -- <a href="https://clojars.org/repo/org/clojars/kyleannen/webtictactoe/">Clojars Artifact</a> -- <a href="http://young-shelf-68199.herokuapp.com/">Heroku Deploy</a></strong>
 
 org.clojars.kyleannen.webtictactoe
 
@@ -199,7 +199,7 @@ Currently code coverage is working for Scala, percentage will increase as I swit
 
 org.clojars.kyleannen.jsonserver
 
-<strong>API Endpoint:</strong> https://protected-anchorage-62016.herokuapp.com/
+<strong>API Endpoint:</strong> http://protected-anchorage-62016.herokuapp.com/
 
 The JSON TicTacToe Server utilizes the JavaServer and TicTacToe to implement a JSON API that accepts a JSON payload and responds with the subsequent game state in a JSON response.
 
@@ -243,7 +243,7 @@ Code coverage will be implemented shortly.
 
 <strong>API Dependency:</strong> TicTacToe JsonServer
 
-<strong><a href="https://github.com/kyle-annen/jsontictactoe">Github</a> -- <a href="https://clojars.org/repo/org/clojars/kyleannen/jsontictactoe/">Clojars Artifact</a> -- <a href="https://mysterious-badlands-66536.herokuapp.com/">Live (Heroku)</a></strong>
+<strong><a href="https://github.com/kyle-annen/jsontictactoe">Github</a> -- <a href="https://clojars.org/repo/org/clojars/kyleannen/jsontictactoe/">Clojars Artifact</a> -- <a href="http://mysterious-badlands-66536.herokuapp.com/">Live (Heroku)</a></strong>
 
 org.clojars.kyleannen.jsontictactoe
 
@@ -263,7 +263,7 @@ Please note that this is a work in progress, and will be heavily modified prior 
 
 <strong>API Dependency:</strong> TicTacToe JsonServer
 
-<strong><a href="https://github.com/kyle-annen/angular-tic-tac-toe">Github</a> -- <a href="https://clojars.org/repo/org/clojars/kyleannen/angulartictactoe/">Clojars Artifact</a> -- <a href="https://desolate-harbor-39385.herokuapp.com/">Live (Heroku)</a></strong>
+<strong><a href="https://github.com/kyle-annen/angular-tic-tac-toe">Github</a> -- <a href="https://clojars.org/repo/org/clojars/kyleannen/angulartictactoe/">Clojars Artifact</a> -- <a href="http://desolate-harbor-39385.herokuapp.com/">Live (Heroku)</a></strong>
 
 org.clojars.kyleannen.angulartictactoe
 
