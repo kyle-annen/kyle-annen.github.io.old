@@ -128,6 +128,7 @@ Requirements for Java Http Server:
 # Specialized Servers
 -------
 ### File Form Directory Server: Scala
+
 <img src="https://travis-ci.org/kyle-annen/file-directory-form-server.svg?branch=master"/>
 <a class="badge-align" href="https://www.codacy.com/app/kyle-annen/file-directory-form-server?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kyle-annen/file-directory-form-server&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/ad8a59824c1a449ba7856a0754fc741d"/></a>
 
@@ -168,6 +169,9 @@ object Server {
 
 
 ### HTML TicTacToe Server: Scala / Java
+
+Currently code coverage is working for Scala, percentage will increase as I switch code coverage reporting to Jacoco & Codacy.
+
 <img src="https://travis-ci.org/kyle-annen/webtictactoe.svg?branch=master"/>
 <a href='https://coveralls.io/github/kyle-annen/webtictactoe?branch=master'><img src='https://coveralls.io/repos/github/kyle-annen/webtictactoe/badge.svg?branch=master' alt='Coverage Status' /></a>
 <a class="badge-align" href="https://www.codacy.com/app/kyle-annen/webtictactoe?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kyle-annen/webtictactoe&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/42297307cdec4a7b833aa75b96aa40bd"/></a>
@@ -181,6 +185,9 @@ org.clojars.kyleannen.webtictactoe
 A static HTML server that serves up a static TicTacToe game.  The open spaces are links which submit the game parameters through url parameters. A custom controller and a additional Scala object are used to interact with the TicTacToe artifact, generate updated HTML for the next state of the game, and pass the new game board static HTML page back to the client.
 
 ### JSON TicTacToe Server: Scala / Java
+
+Currently code coverage is working for Scala, percentage will increase as I switch code coverage reporting to Jacoco & Codacy.
+
 <img src="https://travis-ci.org/kyle-annen/jsonserver.svg?branch=master"/>
 <a href='https://coveralls.io/github/kyle-annen/jsonserver?branch=master'><img src='https://coveralls.io/repos/github/kyle-annen/jsonserver/badge.svg?branch=master' alt='Coverage Status' /></a>
 <a class="badge-align" href="https://www.codacy.com/app/kyle-annen/jsonserver?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kyle-annen/jsonserver&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/445754ade8ca486897f910c5d145e825"/></a>
@@ -226,6 +233,9 @@ Example JSON Response:
 ------
 
 ### JsonTicTacToe: Vanilla JavaScript
+
+Code coverage will be implemented shortly.
+
  <img src="https://travis-ci.org/kyle-annen/jsontictactoe.svg?branch=master"/>
 <a class="badge-align" href="https://www.codacy.com/app/kyle-annen/webtictactoe?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kyle-annen/webtictactoe&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/42297307cdec4a7b833aa75b96aa40bd"/></a>
 
@@ -241,7 +251,10 @@ The artifact deployed to heroku is a static file server based on the JavaServer 
 
 The response is handled asynchronously via a call back, which updates the game board and messages variables in the module, and renders the updated game board and messages.
 
-### Angular TicTacToe: Angular 2 / Typscript
+### [WIP] Angular TicTacToe: Angular 2 / Typscript
+
+Please note that this is a work in progress, and will be heavily modified prior to the review board.
+
 <img src="https://travis-ci.org/kyle-annen/angular-tic-tac-toe.svg?branch=master"/>
 <a class="badge-align" href="https://www.codacy.com/app/kyle-annen/angular-tic-tac-toe?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kyle-annen/angular-tic-tac-toe&amp;utm_campaign=Badge_Coverage"><img src="https://api.codacy.com/project/badge/Coverage/f479cbd74c52476193e0a74a54fd4b3a"/></a>
 <a class="badge-align" href="https://www.codacy.com/app/kyle-annen/angular-tic-tac-toe?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kyle-annen/angular-tic-tac-toe&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/f479cbd74c52476193e0a74a54fd4b3a"/></a>
