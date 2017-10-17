@@ -12,7 +12,8 @@ In retrospect, teaching myself the basics of programming was far easier than con
 
 My weakness has been a lack of vision for where design patterns are appropriate, where my methods are error prone, and the speed at which I assimilate new design patters.
 
-<--!more-->
+<!--more-->
+
 # Less than ideal choices
 
 In the Java HTTP Serve project, I implemented a builder pattern for two objects.  In the server requests are parsed using a builder pattern to produce a RequestParameters Object. The RequestParameters object is routed to a controller based on static and dynamic routeing (static has preference), the controller then constructs a ResponseParameters object (again using a builder pattern) which is then passed back up to the Server.  The server then uses a sending class to dispatch the response.
