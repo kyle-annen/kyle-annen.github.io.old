@@ -6,27 +6,27 @@ categories: design
 excerpt_separator: <!--more-->
 ---
 
-The apprenticship is a very personal expereince.  For many the choices that led to apprenticeship at 8th Light where deliberate. For me it was a sustained two year effort and hundereds of hours of self guided learning.
+The apprenticeship is a very personal experience.  For many the choices that led to apprenticeship at 8th Light where deliberate. For me it was a sustained two year effort and hundreds of hours of self guided learning.
 
-In retrospect, teaching myself the basics of programming was far easier than confronting my own weakness. Working hard day after day is my strength.  The stuborness to make something work, track down a bug, or push through until the ah-ha moment is my strength.  Curiosity is my strength.
+In retrospect, teaching myself the basics of programming was far easier than confronting my own weakness. Working hard day after day is my strength.  The determination to make something work, track down a bug, or push through until the ah-ha moment is my strength.  Curiosity is my strength.
 
-My weakness has been a lack of ability to see where my design patterns are inappropriate, where my methods are error prone, and the speed at which I assimilate new design patters.
+My weakness has been a lack of vision for where design patterns are appropriate, where my methods are error prone, and the speed at which I assimilate new design patters.
 
 In order to truly understand a design pattern like the builder pattern, I need to spend some time with it.
 
 # Less than ideal choices
 
-In the Java HTTP Serve project, I implemented a builder pattern for two objects.  In the server requests are parsed using a builder pattern to produce a RequestParameters Object. The RequestParameters object is routed to a controller based on static and dynamic routeing (static has preferance), the controller then constructs a ResponseParameters object (again using a builder pattern) which is then passed back up to the Server.  The server then uses a sending class to dispatch the response.
+In the Java HTTP Serve project, I implemented a builder pattern for two objects.  In the server requests are parsed using a builder pattern to produce a RequestParameters Object. The RequestParameters object is routed to a controller based on static and dynamic routeing (static has preference), the controller then constructs a ResponseParameters object (again using a builder pattern) which is then passed back up to the Server.  The server then uses a sending class to dispatch the response.
 
 My weakness comes when I fail to see how the pattern is better than my hacky solution, and I find myself resisting the refactor to a more accepted pattern.  In retrospect I am identifying this as a weakness because the improvements where vast and the refactor took a relatively small amount of time compared to the benefit.
 
-I implemented the builder pattern as it is more flexible than the factory pattern.  In retrospect there was no need for the flexibility.  A factory pattern would have sufficed as each object is instantiated at a single point in time during the lifecycle of a request.
+I implemented the builder pattern as it is more flexible than the factory pattern.  In retrospect there was no need for the flexibility.  A factory pattern would have sufficed as each object is instantiated at a single point in time during the life cycle of a request.
 
-Passing the entire request into a factor would have lead to a less leaky abstraction, a more succint call, and a clearer interface.
+Passing the entire request into a factor would have lead to a less leaky abstraction, a more succinct call, and a clearer interface.
 
 # A good choice, but after a poor one
 
-In my Scala Console TicTacToe, the game loop was written in the first week of my apprenticship.  It works.  That is about the best thing I can say about it.  It is testable, tested, and it works.
+In my Scala Console TicTacToe, the game loop was written in the first week of my apprenticeship.  It works.  That is about the best thing I can say about it.  It is testable, tested, and it works.
 
 For transparency, and also to confront my mistakes, here is the game-loop as it currently stands.  To be completely clear, this give me shivers when I look at it.
 
@@ -117,7 +117,7 @@ For transparency, and also to confront my mistakes, here is the game-loop as it 
     }
   }
 ```
-When writing the interface for the core logic of the game, I created a GameState class, which returns an instance of the GameState class for every child funciton called. This allows more pleasing, less leaky (a lot less leaky) abstraction, and infinetly easier to understand. 
+When writing the interface for the core logic of the game, I created a GameState class, which returns an instance of the GameState class for every class function called. This allows more pleasing, less leaky (a lot less leaky) abstraction, and is infinitely easier to understand. 
 
 Here is the game loop logic to progress through a human move and a computer move. Much cleaner.
 
@@ -140,6 +140,6 @@ def progressGameState(): GameState = {
 
 Design has been the most difficult aspect of programming for me.  I realize that this is my weakness, and it has also evolved into an interest.  I find design patterns utterly fascinating. However, after reading about different patterns I still have to implement each pattern fully before I internalize each.
 
-This is not somthing I am used to.  Though through my self learning process I would dive in and try to make things work, not learning by reading.  My goal now in my design research is to understand basic implmentation and use cases so that in the event I am presented with a use case, I can recognize and implement it.
+This is not something I am used to.  Though through my self learning process I would dive in and try to make things work, not learning by reading.  My goal now in my design research is to understand basic implementation and use cases so that in the event I am presented with a use case, I can recognize and implement it.
 
 
