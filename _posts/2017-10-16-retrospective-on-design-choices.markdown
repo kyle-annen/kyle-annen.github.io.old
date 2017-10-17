@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Design Choice Retrospective
-date:   2017-10-10 12:00:00 -0500
+date:   2017-10-16 12:00:00 -0500
 categories: design
 excerpt_separator: <!--more-->
 ---
