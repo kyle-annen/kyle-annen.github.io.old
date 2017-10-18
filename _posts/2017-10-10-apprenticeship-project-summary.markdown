@@ -175,7 +175,9 @@ object Server {
 
 Code Coverage:
 
-* Java / Scala: `sbt jacoco` -> 82.35%
+Run `sh testcoverage.sh` ***Warning: browser tab will be opened.***
+
+* Java / Scala: -> 82.35%
   * GameServer: -> 0.00% (pure configuration and main)
   * Integrator: -> 100%
   * ControllerTicTacToe: -> 100%
