@@ -249,7 +249,7 @@ Example JSON Response:
 
 Test Coverage:
 
-`sh testcoverage.sh`
+`sh testcoverage.sh` **Warning: Two code coverage browser tabs will open**
 
 * Java / Sclala: -> 76%
   * GameServer: -> 0.00% (pure configuration and main)
@@ -278,6 +278,16 @@ Please note that this is a work in progress, and will be heavily modified prior 
 <img src="https://travis-ci.org/kyle-annen/angular-tic-tac-toe.svg?branch=master"/>
 <a class="badge-align" href="https://www.codacy.com/app/kyle-annen/angular-tic-tac-toe?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kyle-annen/angular-tic-tac-toe&amp;utm_campaign=Badge_Coverage"><img src="https://api.codacy.com/project/badge/Coverage/f479cbd74c52476193e0a74a54fd4b3a"/></a>
 <a class="badge-align" href="https://www.codacy.com/app/kyle-annen/angular-tic-tac-toe?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kyle-annen/angular-tic-tac-toe&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/f479cbd74c52476193e0a74a54fd4b3a"/></a>
+
+Code coverage:
+
+Run: `testcoverage.sh` **Warning, karma takes control of your browser and 3 browsers tabs will open**
+
+* JavaScript / Angular: -> 97.56%
+* Scala / Java: -> 47%
+  * AngularServer: -> 0.00% (pure configuration and main)
+  * ControllerTicTacToeWeb: -> 100%
+
 
 <strong>Dependencies:</strong> JavaServer
 
