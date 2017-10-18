@@ -170,11 +170,15 @@ object Server {
 
 ### HTML TicTacToe Server: Scala / Java
 
-Currently code coverage is working for Scala, percentage will increase as I switch code coverage reporting to Jacoco & Codacy.
-
 <img src="https://travis-ci.org/kyle-annen/webtictactoe.svg?branch=master"/>
-<a href='https://coveralls.io/github/kyle-annen/webtictactoe?branch=master'><img src='https://coveralls.io/repos/github/kyle-annen/webtictactoe/badge.svg?branch=master' alt='Coverage Status' /></a>
 <a class="badge-align" href="https://www.codacy.com/app/kyle-annen/webtictactoe?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kyle-annen/webtictactoe&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/42297307cdec4a7b833aa75b96aa40bd"/></a>
+
+Code Coverage:
+
+* Java / Scala: `sbt jacoco` -> 82.35%
+  * GameServer: -> 0.00% (pure configuration and main)
+  * Integrator: -> 100%
+  * ControllerTicTacToe: -> 100%
 
 <strong>Dependencies:</strong> JavaServer, TicTacToe
 
@@ -189,8 +193,14 @@ A static HTML server that serves up a static TicTacToe game.  The open spaces ar
 Currently code coverage is working for Scala, percentage will increase as I switch code coverage reporting to Jacoco & Codacy.
 
 <img src="https://travis-ci.org/kyle-annen/jsonserver.svg?branch=master"/>
-<a href='https://coveralls.io/github/kyle-annen/jsonserver?branch=master'><img src='https://coveralls.io/repos/github/kyle-annen/jsonserver/badge.svg?branch=master' alt='Coverage Status' /></a>
 <a class="badge-align" href="https://www.codacy.com/app/kyle-annen/jsonserver?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kyle-annen/jsonserver&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/445754ade8ca486897f910c5d145e825"/></a>
+
+Code Coverage:
+
+* Java / Scala: `sbt jacoco` -> 72%
+  * JsonServer -> 0.00% (pure configuration and main)
+  * IntegratorJSON -> 100%
+  * ControllerTicTacToeJSON -> 100%
 
 
 <strong>Dependencies:</strong> JavaServer, TicTacToe
@@ -234,10 +244,20 @@ Example JSON Response:
 
 ### JsonTicTacToe: Vanilla JavaScript
 
-Code coverage will be implemented shortly.
-
  <img src="https://travis-ci.org/kyle-annen/jsontictactoe.svg?branch=master"/>
 <a class="badge-align" href="https://www.codacy.com/app/kyle-annen/webtictactoe?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kyle-annen/webtictactoe&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/42297307cdec4a7b833aa75b96aa40bd"/></a>
+
+Test Coverage:
+
+`sh testcoverage.sh`
+
+* Java / Sclala: -> 76%
+  * GameServer: -> 0.00% (pure configuration and main)
+  * IntegratorJSON: -> 100%
+  * ControllerTicTacToeJSON: -> 100%
+
+* Javascript: -> 58.93% 
+  * The functions are tested as best I could fathom.  Seems there may be issues with inspection into xmlRequest.
 
 <strong>Dependencies:</strong> JavaServer
 
