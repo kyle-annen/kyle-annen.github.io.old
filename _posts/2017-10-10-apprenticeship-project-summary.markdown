@@ -23,7 +23,7 @@ excerpt_separator: <!--more-->
 
 org.clojars.kyleannen.tictactoe
 
-This repository contains the TicTacToe core functionality along with a Game class that runs a console TicTacToe game. The program is written in Scala, and uses only ScalaTest and Scalatastic for testing and sytax checking.  No other third part libraries are utilized.
+This repository contains the TicTacToe core functionality TicTacToe game. The program is written in Scala, and uses only ScalaTest and Scalatastic for testing and sytax checking.  No other third part libraries are utilized.
 
 The AI logic used is a tail recursive, depth-first implementation of NegaMax. For board sizes in excess of 3x3, a progressive depth limiting strategy is utilized. The game is playable at board sizes up to 10x10 without issues.
 
@@ -273,9 +273,7 @@ The artifact deployed to heroku is a static file server based on the JavaServer 
 
 The response is handled asynchronously via a call back, which updates the game board and messages variables in the module, and renders the updated game board and messages.
 
-### [WIP] Angular TicTacToe: Angular 2 / Typscript
-
-Please note that this is a work in progress, and will be heavily modified prior to the review board.
+### Angular TicTacToe: Angular 2 / Typscript
 
 <img src="https://travis-ci.org/kyle-annen/angular-tic-tac-toe.svg?branch=master"/>
 <a class="badge-align" href="https://www.codacy.com/app/kyle-annen/angular-tic-tac-toe?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kyle-annen/angular-tic-tac-toe&amp;utm_campaign=Badge_Coverage"><img src="https://api.codacy.com/project/badge/Coverage/f479cbd74c52476193e0a74a54fd4b3a"/></a>
@@ -302,3 +300,23 @@ org.clojars.kyleannen.angulartictactoe
 Note: If you are using HTTPS Anywhere, you will need to disable for the API to finish the call.
 
 The artifact deployed to heroku is a static file server based on JavaServer with limited routes and directory server disabled.  The Angular 2 application is built using `ng build` and deployed with SBT.  The Angular app portion is a very simple Angular application that updates component values based on a JSON Request and Response from the JSON TicTacToe Server.
+
+
+# Console
+
+## Console TicTacToe: Scala
+
+
+
+[![Build Status](https://travis-ci.org/kyle-annen/consoletictactoe.svg?branch=master)](https://travis-ci.org/kyle-annen/consoletictactoe)
+[![Coverage Status](https://coveralls.io/repos/github/kyle-annen/consoletictactoe/badge.svg?branch=master)](https://coveralls.io/github/kyle-annen/consoletictactoe?branch=master)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/068dd8bb9d70458685228ec9fab3c164)](https://www.codacy.com/app/kyle-annen/consoletictactoe?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kyle-annen/scala-tictactoe&amp;utm_campaign=Badge_Grade)
+
+<strong>Dependendies:</strong> Scala-TicTacToe
+
+A console implementation of TicTacToe, playable on 3x3, 4x4, and 5x5 boards (any size really if source code is edited). After 10x10 the board loses som visual fidelity.
+
+<strong><a href="https://github.com/kyle-annen/consoletictactoe">Github</a> -- <a href="https://clojars.org/repo/org/clojars/kyleannen/consoletictactoe/">Clojars Artifact</a>
+
+The console game loop and logic are from my first week at 8th Light. What I can say for it is that it works. It is not something I am happy with, however I was not confident I would be able to rewrite the Game class prior to the review board.
+
