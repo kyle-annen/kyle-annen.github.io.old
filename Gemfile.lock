@@ -202,9 +202,10 @@ DEPENDENCIES
   jekyll-paginate
   jekyll-seo-tag
   jekyll-sitemap
+  jekyll-watch
   minima (~> 2.0)
   rouge
   tzinfo-data
 
 BUNDLED WITH
-   1.15.1
+   1.16.0.pre.3
