@@ -26,11 +26,11 @@ For the upcoming individual interim project, I would like to propose a new inter
   - Single button solicitation via slack
   - Automated booking set by parameters
 - Statistics
-  - Rank Nessesary Zagakus by number of apprentices that have no had them
   - Set imperitive topics
+  - Rank imperitive topics by number of apprentices absent from each
   - Set paths / nessesary sphere of knowledge
-  - Simple access / high visibility of past zagaku topics and who has seen it
-  - Show trend based on subject / business area / language
+  - Simple access / high visibility of past zagaku topics
+  - Show trends based on subject / business area / language
   - Show trends of cancelled Zagakus?
 - Archival
   - host as much content on github per zagaku (in case the app falls into disuse)
@@ -45,9 +45,23 @@ For the upcoming individual interim project, I would like to propose a new inter
   - Track can be clicked off as completed
   - Code snippets / github repo / blog can be added per item if they so choose
 
-# Track Example
+# Tracks
 
 ![zagaku2]({{ site.url }}/assets/zagaku2.png)
+
+The goal of Tracks is to create an simple, intuitive path to sufficientcy in a given language, technology or framework.  These could be used to organize a quick onboarding path for long term clients, or for common technologies.  Somtimes it is difficult to locate appropriate resources to learn a particular subset of skills.
+
+Tracks can have dependent Tracks.  For example, Phoenix would have a dependency on Elixir.  This would suggest the completion of the Elixir path to fully grasp the content of the Phoenix path.
+
+# Zagaku Scheduling
+
+![zagaku3]({{ site.url  }}/assets/zagaku3.png)
+
+The goal of scheduling is multifold. The primary goal is broad transparency for all stake holders, enabling all parties to have a picture of Zagakus at a glance. The secondary goal is the liberation of the information produced for a Zagaku, both to reduce duplicated preparation and to enable a broader ingestion of the information, and to ensure persistence of generated content. The final goal is to streamline planning, scheduling and communication.
+
+# Library - _somewhat aspirational_
+
+The library feature will allow the scanning of ISBN numbers and input of volume numbers to a centralized system to enable tracking of books, show availabily of resources in track and zagaku notes, and to have a searchable and organizable catalog. This is highly dependent on third party code and APIs.
 
 ### Integrations
 
@@ -67,6 +81,7 @@ For the upcoming individual interim project, I would like to propose a new inter
   - etc.
 - OAuth
   - nessesary for calendar
+  - one click login
 
 # Random list of ideas (brain dump)
 
