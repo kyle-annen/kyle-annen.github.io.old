@@ -26,9 +26,9 @@ For the upcoming individual interim project, I would like to propose a new inter
   - Single button solicitation via slack
   - Automated booking set by parameters
 - Statistics
-  - Set imperitive topics
-  - Rank imperitive topics by number of apprentices absent from each
-  - Set paths / nessesary sphere of knowledge
+  - Set imperative topics
+  - Rank imperative topics by number of apprentices absent from each
+  - Set paths / necessary sphere of knowledge
   - Simple access / high visibility of past zagaku topics
   - Show trends based on subject / business area / language
   - Show trends of cancelled Zagakus?
@@ -49,7 +49,7 @@ For the upcoming individual interim project, I would like to propose a new inter
 
 ![zagaku2]({{ site.url }}/assets/zagaku2.png)
 
-The goal of Tracks is to create an simple, intuitive path to sufficientcy in a given language, technology or framework.  These could be used to organize a quick onboarding path for long term clients, or for common technologies.  Somtimes it is difficult to locate appropriate resources to learn a particular subset of skills.
+The goal of Tracks is to create an simple, intuitive path to sufficiency in a given language, technology or framework.  These could be used to organize a quick on-boarding path for long term clients, or for common technologies.  Sometimes it is difficult to locate appropriate resources to learn a particular subset of skills.
 
 Tracks can have dependent Tracks.  For example, Phoenix would have a dependency on Elixir.  This would suggest the completion of the Elixir path to fully grasp the content of the Phoenix path.
 
@@ -57,11 +57,11 @@ Tracks can have dependent Tracks.  For example, Phoenix would have a dependency 
 
 ![zagaku3]({{ site.url  }}/assets/zagaku3.png)
 
-The goal of scheduling is multifold. The primary goal is broad transparency for all stake holders, enabling all parties to have a picture of Zagakus at a glance. The secondary goal is the liberation of the information produced for a Zagaku, both to reduce duplicated preparation and to enable a broader ingestion of the information, and to ensure persistence of generated content. The final goal is to streamline planning, scheduling and communication.
+The goal of scheduling is multi fold. The primary goal is broad transparency for all stake holders, enabling all parties to have a picture of Zagakus at a glance. The secondary goal is the liberation of the information produced for a Zagaku, both to reduce duplicated preparation and to enable a broader ingestion of the information, and to ensure persistence of generated content. The final goal is to streamline planning, scheduling and communication.
 
-# Library - _somewhat aspirational_
+# Library - _somewhat aspirational_ 
 
-The library feature will allow the scanning of ISBN numbers and input of volume numbers to a centralized system to enable tracking of books, show availabily of resources in track and zagaku notes, and to have a searchable and organizable catalog. This is highly dependent on third party code and APIs.
+The library feature will allow the scanning of ISBN numbers and input of volume numbers to a centralized system to enable tracking of books, show availability of resources in track and zagaku notes, and to search and organize the catalog. This is highly dependent on availabilty of third party libraries and APIs.
 
 ### Integrations
 
@@ -71,7 +71,7 @@ The library feature will allow the scanning of ISBN numbers and input of volume 
   - Bot Stats
     - Upcoming schedule
     - Recent Topics / Upcoming Topics
-    - Imperitive & absent topics based on apprentice
+    - Imperative & absent topics based on apprentice
     - Time left in apprenticeship
     - Zagaku champions rank
   - Automated Booking on fallback
@@ -80,7 +80,7 @@ The library feature will allow the scanning of ISBN numbers and input of volume 
   - Code gists
   - etc.
 - OAuth
-  - nessesary for calendar
+  - necessary for calendar
   - one click login
 
 # Random list of ideas (brain dump)
