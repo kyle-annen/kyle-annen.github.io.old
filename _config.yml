@@ -13,14 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: <learn> Code </learn> 
-email: kyleannen@gmail.com 
+title: <learn> Code </learn>
+email: kyleannen@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  A self-taught programmer's journey to employment and beyond. 
+  A self-taught programmer's journey to employment and beyond.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: kylehmrtime
-github_username: kyle-annen 
+github_username: kyle-annen
 excerpt_seperator: "<!--excerpt-->"
 
 # Build settings
@@ -29,12 +29,12 @@ highlighter: rouge
 theme: minima
 plugins_dir:
   - jekyll-feed
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-seo-tag
   - rouge
-  
+
 
 # Pagination Settings
 paginate: 30
