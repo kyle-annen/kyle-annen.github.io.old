@@ -11,17 +11,17 @@ import Element.Font as Font
 
 
 main =
-    Element.layout [ fonts ] pageLayout
+    Element.layout [] pageLayout
 
 
 pageTitle : String
 pageTitle =
-    "Blogerific"
+    "kyle@nnen.rocks"
 
 
 tagline : String
 tagline =
-    "Gernerally uninteresing musings"
+    "musings of a life long learner"
 
 
 pageLayout : Element msg
@@ -39,7 +39,7 @@ header =
 
 headerStyle : List (Attribute msg)
 headerStyle =
-    [ height (fill |> maximum 100)
+    [ height (fill |> maximum 80)
     , width fill
     , Background.color colors.orange
     ]
@@ -47,9 +47,13 @@ headerStyle =
 
 headerContent : List (Element msg)
 headerContent =
-    [ el [ centerX, centerY, Font.bold ] (text pageTitle)
-    , el [ centerX, centerY, padding 5 ] (text tagline)
+    [ el [ centerY, padding 10, fonts.title, Font.size 30 ] (text pageTitle)
+    , el [ centerY, padding 10 ] (text tagline)
     ]
+
+
+headerTitle =
+    el [ centerY, padding 10, fonts.title, Font.size 30 ] (text pageTitle)
 
 
 body : Element msg
@@ -67,12 +71,21 @@ bodyStyle =
     [ height fill, width fill, Background.color colors.green ]
 
 
-fonts : Attribute msg
 fonts =
-    Font.family
-        [ Font.typeface "Helevetica"
-        , Font.sansSerif
-        ]
+    { main =
+        Font.family
+            [ Font.typeface "Helevetica"
+            , Font.sansSerif
+            ]
+    , title =
+        Font.family
+            [ Font.external
+                { name = "Big Shoulders Text"
+                , url = "https://fonts.googleapis.com/css?family=Big+Shoulders+Text"
+                }
+            , Font.sansSerif
+            ]
+    }
 
 
 colors =
